@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -38,6 +39,14 @@ module.exports = {
       template: './public/index.html',
       filename: './index.html',
       favicon: './public/favicon.svg',
+    }),
+    new BrowserSyncPlugin({
+      host: 'localhost',
+      open: 'external',
+      port: 3000,
+      proxy: 'http://localhost:8080',
+    }, {
+      reload: true,
     }),
   ],
 };

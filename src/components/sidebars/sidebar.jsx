@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppstoreOutlined } from '@ant-design/icons';
+import { AppstoreOutlined, OrderedListOutlined } from '@ant-design/icons';
 import { NavLink } from 'react-router-dom';
 
 const Sidebar = () => (
@@ -17,7 +17,7 @@ const Sidebar = () => (
         </li>
         <li>
           <NavLink to="/order">
-            <AppstoreOutlined />
+            <OrderedListOutlined />
             <span>Orders</span>
           </NavLink>
         </li>
@@ -25,6 +25,12 @@ const Sidebar = () => (
           <NavLink to="/payment">
             <AppstoreOutlined />
             <span>Payment</span>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/payment">
+            <AppstoreOutlined />
+            <span>Setting</span>
           </NavLink>
         </li>
       </ul>
