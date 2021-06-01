@@ -1,0 +1,150 @@
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  position: fixed;
+  background-color: #fff;
+  width: inherit;
+  z-index: 1;
+  #nav-btn {
+    cursor: pointer;
+    display: inline-block;
+  }
+  nav {
+    ul {
+      list-style: none;
+      padding-left: 0;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      li {
+        margin: 0 10px;
+        a {
+          font-size: 16px;
+          text-transform: capitalize;
+          display: flex;
+          flex-direction: row;
+          text-decoration: none;
+          color: $text-color;
+          img {
+            width: 30px;
+          }
+          div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 10px; 
+            span:nth-child(1) {
+              font-size: 15px;
+              color: $black;
+            }
+            span:nth-child(2) {
+              font-size: 12px;
+              color: $text-color;
+             font-weight: 300; 
+             letter-spacing: 0.5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    background-color: transparent;
+    #nav-btn {
+      display: none;
+    }
+    nav {
+      ul {
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        li {
+          margin: 0 5px;
+          a {
+            font-size: 16px;
+            text-transform: capitalize;
+            display: flex;
+            flex-direction: row;
+            text-decoration: none;
+            color: $text-color;
+            img {
+              width: 30px;
+            }
+            div {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              margin-left: 10px; 
+              span:nth-child(1) {
+                font-size: 15px;
+                color: $black;
+              }
+              span:nth-child(2) {
+                font-size: 12px;
+                color: $text-color;
+               font-weight: 300; 
+               letter-spacing: 0.5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  header {
+    background-color: transparent;
+    #nav-btn {
+      display: none;
+    }
+    nav {
+      ul {
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        li {
+          margin: 0 5px;
+          a {
+            font-size: 16px;
+            text-transform: capitalize;
+            display: flex;
+            flex-direction: row;
+            text-decoration: none;
+            color: $text-color;
+            img {
+              width: 30px;
+            }
+            div {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              margin-left: 10px; 
+              span:nth-child(1) {
+                font-size: 15px;
+                color: $black;
+              }
+              span:nth-child(2) {
+                font-size: 12px;
+                color: $text-color;
+               font-weight: 300; 
+               letter-spacing: 0.5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  } 
+}
