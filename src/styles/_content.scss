@@ -27,10 +27,14 @@
 @media screen and (min-width: 1240px) {
   .content-wrapper {
     width: 80vw;
-    background-color: #fafafa;
     position: relative;
     .content {
-      padding: 0 15px;
+      min-height: 100%;
+      background-color: salmon;
+      position: relative;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
       .title {
         margin-bottom: 30px;
         h1 {

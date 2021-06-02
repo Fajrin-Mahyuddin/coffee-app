@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import MainLayout from 'layout';
-import { LeftOutlined, PlusCircleOutlined, RightOutlined } from '@ant-design/icons';
+import { LeftOutlined,  PlusOutlined, RightOutlined, UserOutlined } from '@ant-design/icons';
 import CreditCards from '../../../public/images/credit-cards.svg';
 import active from '../../../public/images/icons/active.svg';
 import iconsMountain from '../../../public/images/icons/icons-mountain.svg';
@@ -16,7 +16,7 @@ const DashboardPage = () => {
       </div>
       <div className="card-container">
         <div className="card-item card-shadow">
-          <span className="title">Cards</span>
+          <span className="title-card">Cards</span>
           <div className="card-body flex-row justify-between">
             <div className="slider">
               <img src={CreditCards} alt="credit-cards" />
@@ -62,9 +62,10 @@ const DashboardPage = () => {
           </div>
         </div>
         <div className="card-item">
-          <span className="title">
+          <span className="title-card">
             Goals
-            <PlusCircleOutlined />
+            {' '}
+            <PlusOutlined />
           </span>
           <div className="card-body">
             <LeftOutlined className="left-goals" />
@@ -135,6 +136,174 @@ const DashboardPage = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="card-item">
+          <span className="title-card">
+            Statistics
+          </span>
+          <div className="card-body">
+            asd
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            last
+          </div>
+        </div>
+        <div className="card-item">
+          <span className="title-card">
+            Statistics
+          </span>
+          <div className="card-body">
+            asd
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            as
+          </div>
+        </div>
+        <div className="card-item card-shadow">
+          <span className="title-card">
+            History of Transaction
+          </span>
+          <div className="card-body">
+            <table className="tables">
+              <thead>
+                <tr>
+                  <th className="left">Receiver</th>
+                  <th className="left">Type</th>
+                  <th className="left">Date</th>
+                  <th className="right">Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <UserOutlined />
+                    Fajrin
+                  </td>
+                  <td className="blur">Sport</td>
+                  <td className="blur">3 Jun 2021</td>
+                  <td className="bold right">IDR 20,000</td>
+                </tr>
+                <tr>
+                  <td>
+                    <UserOutlined />
+                    Mahyuddin
+                  </td>
+                  <td className="blur">Food</td>
+                  <td className="blur">2 Jun 2021</td>
+                  <td className="bold right">IDR 200,000</td>
+                </tr>
+                <tr>
+                  <td>
+                    <UserOutlined />
+                    Mahyuddin
+                  </td>
+                  <td className="blur">Food</td>
+                  <td className="blur">2 Jun 2021</td>
+                  <td className="bold right">IDR 200,000</td>
+                </tr>
+                <tr>
+                  <td>
+                    <UserOutlined />
+                    Mahyuddin
+                  </td>
+                  <td className="blur">Food</td>
+                  <td className="blur">2 Jun 2021</td>
+                  <td className="bold right">IDR 200,000</td>
+                </tr>
+                <tr>
+                  <td>
+                    <UserOutlined />
+                    Mahyuddin
+                  </td>
+                  <td className="blur">Food</td>
+                  <td className="blur">2 Jun 2021</td>
+                  <td className="bold right">IDR 200,000</td>
+                </tr>
+                <tr>
+                  <td>
+                    <UserOutlined />
+                    Mahyuddin
+                  </td>
+                  <td className="blur">Food</td>
+                  <td className="blur">2 Jun 2021</td>
+                  <td className="bold right">IDR 200,000</td>
+                </tr>
+                <tr>
+                  <td>
+                    <UserOutlined />
+                    Mahyuddin
+                  </td>
+                  <td className="blur">Food</td>
+                  <td className="blur">2 Jun 2021</td>
+                  <td className="bold right">IDR 200,000</td>
+                </tr>
+                <tr>
+                  <td>
+                    <UserOutlined />
+                    Mahyuddin
+                  </td>
+                  <td className="blur">Food</td>
+                  <td className="blur">2 Jun 2021</td>
+                  <td className="bold right">IDR 200,000</td>
+                </tr>
+                <tr>
+                  <td>
+                    <UserOutlined />
+                    Mahyuddin
+                  </td>
+                  <td className="blur">Food</td>
+                  <td className="blur">2 Jun 2021</td>
+                  <td className="bold right">IDR 200,000</td>
+                </tr>
+                <tr>
+                  <td>
+                    <UserOutlined />
+                    Mahyuddin
+                  </td>
+                  <td className="blur">Food</td>
+                  <td className="blur">2 Jun 2021</td>
+                  <td className="bold right">IDR 200,000</td>
+                </tr>
+                <tr>
+                  <td>
+                    <UserOutlined />
+                    Mahyuddin
+                  </td>
+                  <td className="blur">Food</td>
+                  <td className="blur">2 Jun 2021</td>
+                  <td className="bold right">IDR 200,000</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 .open {
-  background-color: #fff;
+  background-color: $white;
   width: 60vw;
   height: 100vh;
   display: flex;
@@ -188,7 +188,7 @@ aside {
   aside {
     background-color: transparent;
     width: 20vw;
-    max-height: 100vh;
+    max-height: 100%;
     display: flex;
     position: relative;
     left: 0;

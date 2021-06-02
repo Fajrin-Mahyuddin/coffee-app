@@ -1,0 +1,46 @@
+table.tables {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 1em .5em;
+  padding: 0 2em 1em 0;
+  .bold {
+    font-weight: 500;
+    font-size: .7em;
+  }
+  .right {
+    text-align: right;
+  }
+  .left {
+    text-align: left;
+  }
+  .blur {
+    color: $text-color;
+  }
+  thead {
+    tr {
+      th {
+        font-weight: 300;
+        font-size: .9em;
+        color: $text-color;
+        padding-bottom: 8px;
+      }
+    }
+  }
+  tbody {
+    tr {
+      border-bottom: 1px solid $blur-color;
+      td {
+        padding: 7px 0;
+        font-weight: 300;
+        font-size: .8em;
+        span {
+          background-color: #EFEFEF;
+          padding: 3px;
+          border-radius: 50%;
+          margin-right: 5px;
+        }
+      }
+      
+    }
+  }
+}
