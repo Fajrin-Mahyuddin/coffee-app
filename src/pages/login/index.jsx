@@ -1,14 +1,20 @@
 import React from 'react';
-import { BorderLessBtn } from 'components';
-import { Link } from 'react-router-dom';
+import { StandartLayout } from 'layout';
 
 const LoginPage = () => (
-  <div>
-    Login Page
-    <BorderLessBtn />
-    <Link to="/order">Go order</Link>
-    <Link to="/dashboard">Go dashboard</Link>
-  </div>
+  <StandartLayout>
+    <div className="content container">
+      <div className="text-wrapper">
+        <h2>
+          Grow your business faster with
+          <span> fredo</span>
+        </h2>
+      </div>
+      <div className="image-wrapper">
+        <img src="# " alt="image" />
+      </div>
+    </div>
+  </StandartLayout>
 );
 
 export default LoginPage;

@@ -1,56 +1,77 @@
-.content-wrapper {
-  width: 100vw;
-  background-color: #fafafa;
-  position: relative;
-  .content {
-    padding: 15vh 10px 0;
-  } 
-}
-
-.dark {
-  background-color: rgba(0, 0, 0, 0.355);
-  header {
-    z-index: -1;
+.main {
+  .content-wrapper {
+    width: 100vw;
+    background-color: #fafafa;
+    position: relative;
+    .content {
+      padding: 15vh 10px 0;
+    } 
+  }
+  
+  .dark {
+    background-color: rgba(0, 0, 0, 0.355);
+    header {
+      z-index: -1;
+    }
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .content-wrapper {
-    width: 90vw;
-    background-color: #fafafa;
-    position: relative;
-    .content {
-      padding: 0 10px;
+  .main {
+    .content-wrapper {
+      width: 90vw;
+      background-color: #fafafa;
+      position: relative;
+      .content {
+        padding: 0 10px;
+      } 
     } 
-  } 
+  }
 }
 @media screen and (min-width: 1240px) {
-  .content-wrapper {
-    width: 80vw;
-    position: relative;
-    .content {
-      min-height: 100%;
-      background-color: salmon;
+  .main {
+    .content-wrapper {
+      width: 82%;
+      margin-left: 18%;
       position: relative;
-      padding: 15px;
-      display: flex;
-      flex-direction: column;
-      .title {
-        margin-bottom: 30px;
-        h1 {
-          font-weight: 400;
-          text-transform: capitalize;
-          padding-bottom: 0;
-          margin-bottom: 0;
+      overflow: hidden;
+      .content {
+        min-height: 100vh;
+        position: relative;
+        padding: 15px 15px 20px 15px;
+        display: flex;
+        flex-direction: column;
+        .title {
+          margin-bottom: 30px;
+          h1 {
+            font-weight: 400;
+            font-size: 1.9rem;
+            text-transform: capitalize;
+            padding-bottom: 0;
+            margin-bottom: 0;
+          }
+          span {
+            font-size: 12px;
+            color: $text-color;
+            font-weight: 300;
+            letter-spacing: .5px;
+            text-transform: capitalize;
+          }
         }
-        span {
-          font-size: 12px;
-          color: $text-color;
-          font-weight: 300;
-          letter-spacing: .5px;
-          text-transform: capitalize;
-        }
-      }
+      } 
     } 
-  } 
+  }
+  .standart {
+    .content-wrapper {
+      width: 100%;
+      background-color: red;
+      .content {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
 }

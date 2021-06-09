@@ -29,8 +29,15 @@ table.tables {
   tbody {
     tr {
       border-bottom: 1px solid $blur-color;
+      cursor: pointer;
+      &:hover {
+        background-color: #EFEFEF;
+        .blur {
+          color: $black;
+        }
+      }
       td {
-        padding: 7px 0;
+        padding: 7px 5px;
         font-weight: 300;
         font-size: .8em;
         span {

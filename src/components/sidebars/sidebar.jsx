@@ -6,7 +6,7 @@ import {
   CreditCardOutlined,
   CloseCircleOutlined,
 } from '@ant-design/icons';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Sidebar = (props, ref) => {
   const { toggleSidebar } = props;
@@ -14,7 +14,9 @@ const Sidebar = (props, ref) => {
     <aside className="sidestyle" ref={ref}>
       <CloseCircleOutlined onClick={toggleSidebar} className="close-btn" />
       <div className="logo">
-        <img src="favicon.svg" alt="logo" />
+        <Link to="/">
+          <img src="favicon.svg" alt="logo" />
+        </Link>
       </div>
       <div className="menu-wrapper">
         <ul>

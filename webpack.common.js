@@ -43,7 +43,7 @@ module.exports = {
     new BrowserSyncPlugin({
       host: 'localhost',
       open: 'external',
-      port: 3000,
+      port: 3001,
       proxy: 'http://localhost:8080',
     }, {
       reload: true,

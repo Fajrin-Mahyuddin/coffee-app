@@ -1,17 +1,23 @@
-import React, { useRef } from 'react';
-import PropTypes from 'prop-types';
+/* eslint-disable react/prop-types */
+import React, { createRef } from 'react';
 import { ContentWrapper, Navbar, Sidebar } from 'components';
 import { toggleSidebar } from 'utils/drawer-helper';
 
 const MainLayout = ({ children }) => {
-  const sideRef = useRef();
-  const contentRef = useRef();
+  const sideRef = createRef();
+  const contentRef = createRef();
   return (
     <div className="main">
-      <Sidebar toggleSidebar={() => toggleSidebar(sideRef, contentRef)} ref={sideRef} />
+      <Sidebar
+        ref={sideRef}
+        toggleSidebar={() => toggleSidebar(sideRef, contentRef)}
+      />
       <ContentWrapper ref={contentRef}>
         <>
-          <Navbar toggleSidebar={() => toggleSidebar(sideRef, contentRef)} />
+          <Navbar
+            menu="MainMenu"
+            toggleSidebar={() => toggleSidebar(sideRef, contentRef)}
+          />
           <div className="content">
             {children}
           </div>
@@ -19,10 +25,6 @@ const MainLayout = ({ children }) => {
       </ContentWrapper>
     </div>
   );
-};
-
-MainLayout.propTypes = {
-  children: PropTypes.element.isRequired,
 };
 
 export default MainLayout;

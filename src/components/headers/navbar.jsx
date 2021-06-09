@@ -1,43 +1,26 @@
 /* eslint-disable react/prop-types */
-/* eslint-disable arrow-body-style */
-import React, { forwardRef } from 'react';
-import { MailOutlined, BellOutlined, MenuOutlined } from '@ant-design/icons';
+import React, { createRef, forwardRef } from 'react';
+import { MenuOutlined } from '@ant-design/icons';
+import { ifHeaderScrolled } from 'utils/scrolled';
+import NavMenu from './navmenu';
 
-const Navbar = (props, ref) => {
-  const { toggleSidebar } = props;
+const Navbar = ({
+  toggleSidebar,
+  className,
+  menu,
+}, ref) => {
+  const refNav = createRef(null);
+
+  window.addEventListener('scroll', () => ifHeaderScrolled(refNav));
+
   return (
-    <header>
+    <header ref={refNav} className={className}>
       <div className="hide-btn">
         <MenuOutlined className="nav-btn" id="nav-btn" onClick={toggleSidebar} ref={ref} />
       </div>
-      <nav className="nav-menu">
-        <ul>
-          <li>
-            <a href="# ">
-              <MailOutlined />
-            </a>
-          </li>
-          <li>
-            <a href="# ">
-              <BellOutlined />
-            </a>
-          </li>
-          <li>
-            <a href="# ">
-              <img src="favicon.svg" alt="img-profile" />
-              <div>
-                <span>Fajrin</span>
-                <span>Administrator</span>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <NavMenu menu={menu} />
     </header>
   );
 };
-// Navbar.propTypes = {
-//   hideSidebar: PropTypes.func.isRequired,
-// };
 
 export default forwardRef(Navbar);
