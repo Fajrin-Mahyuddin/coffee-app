@@ -6,7 +6,7 @@ const StandartLayout = ({ children }) => {
   const navRef = useRef();
   return (
     <div className="standart">
-      <Navbar menu="StandartMenu" ref={navRef} className="container" />
+      <Navbar menu="StandartMenu" ref={navRef} className="container standart-nav" />
       <ContentWrapper>
         {children}
       </ContentWrapper>

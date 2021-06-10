@@ -18,6 +18,9 @@ const Navbar = ({
       <div className="hide-btn">
         <MenuOutlined className="nav-btn" id="nav-btn" onClick={toggleSidebar} ref={ref} />
       </div>
+      <div className="nav-logo">
+        <img src="favicon.svg" alt="logo" />
+      </div>
       <NavMenu menu={menu} />
     </header>
   );
