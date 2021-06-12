@@ -5,6 +5,7 @@
 @import 'content';
 @import 'cards';
 @import 'table';
+@import 'form';
 
 body {
   margin: 0;
@@ -43,6 +44,11 @@ h1, h2, h3, h4, h5, h6 {
 .mtb-10 {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.mtb-20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .mrl-10 {

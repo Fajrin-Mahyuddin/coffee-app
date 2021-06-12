@@ -1,25 +1,27 @@
+/* eslint-disable arrow-body-style */
 /* eslint-disable react/prop-types */
-import React, { createRef, forwardRef } from 'react';
-import { MenuOutlined } from '@ant-design/icons';
+import React, { forwardRef, useEffect } from 'react';
 import { ifHeaderScrolled } from 'utils/scrolled';
+import { ToggleBtn } from 'components';
 import NavMenu from './navmenu';
 
 const Navbar = ({
-  toggleSidebar,
   className,
+  toggleAction,
   menu,
 }, ref) => {
-  const refNav = createRef(null);
-
-  window.addEventListener('scroll', () => ifHeaderScrolled(refNav));
+  useEffect(() => {
+    window.addEventListener('scroll', () => ifHeaderScrolled(ref));
+    return () => window.addEventListener('scroll', () => ifHeaderScrolled(ref));
+  }, []);
 
   return (
-    <header ref={refNav} className={className}>
+    <header ref={ref} className={className}>
       <div className="hide-btn">
-        <MenuOutlined className="nav-btn" id="nav-btn" onClick={toggleSidebar} ref={ref} />
+        <ToggleBtn className="nav-btn" id="nav-btn" toggleAction={toggleAction} />
       </div>
       <div className="nav-logo">
-        <img src="favicon.svg" alt="logo" />
+        <img src="favicon.svg" className="logo" alt="logo" />
       </div>
       <NavMenu menu={menu} />
     </header>

@@ -1,5 +1,17 @@
-const toggleSidebar = (btn, content) => {
-  btn.current.classList.toggle('open');
+const toggleSidebar = (sidebar, content) => {
+  sidebar.current.classList.toggle('open');
   content.current.classList.toggle('dark');
 };
-export { toggleSidebar };
+
+const resetToggle = (sidebar, content) => {
+  sidebar.current.classList.remove('open');
+  content.current.classList.remove('dark');
+};
+
+const toggleAction = (elementToggle, content) => {
+  console.log('element toggle', elementToggle);
+  elementToggle.current.classList.toggle('open');
+  content.current.classList.toggle('dark');
+};
+
+export { toggleSidebar, resetToggle, toggleAction };

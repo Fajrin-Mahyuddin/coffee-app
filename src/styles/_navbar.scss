@@ -1,62 +1,126 @@
-.main {
-  header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 40px;
-    position: fixed;
-    background-color: #fff;
-    width: inherit;
-    z-index: 1;
-    #nav-btn {
-      cursor: pointer;
-      display: inline-block;
-    }
-    nav {
-      ul {
-        li {
-          .nav-menu-item {
-            color: $text-color;
+@media screen and (max-width: 425px) {
+  .main {
+    header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+      position: fixed;
+      background-color: #fff;
+      width: inherit;
+      z-index: 1;
+      #nav-btn {
+        cursor: pointer;
+        display: inline-block;
+      }
+      nav {
+        ul {
+          li {
+            .nav-menu-item {
+              color: $text-color;
+            }
           }
         }
       }
     }
   }
-}
-
-nav {
-  ul {
-    list-style: none;
-    padding-left: 0;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    li {
-      margin: 0 10px;
-      .nav-menu-item {
-        font-size: 16px;
-        text-transform: capitalize;
-        display: flex;
-        flex-direction: row;
-        text-decoration: none;
-        img {
-          width: 30px;
+  .standart {
+    header {
+      display: flex;
+      padding: 8px 8%;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      width: inherit;
+      z-index: 1;
+      #nav-btn {
+        cursor: pointer;
+        display: inline-block;
+      }
+      .nav-logo {
+        display: none;
+        .logo {
+          width: 35px;
         }
-        div {
+      }
+      nav {
+        display: none;
+        ul {
+          li {
+            .nav-menu-item {
+              color: $text-color;
+            }
+          }
+        }
+      }
+    } 
+    header.open {
+      background-color: $white;
+      position: absolute;
+      display: flex;
+      height: 100vh;
+      flex-direction: column;
+      justify-content: start;
+      width: 60%;
+      z-index: 1;
+      #nav-btn {
+        position: absolute;
+        z-index: 2;
+        right: 10px;
+        top: 10px;
+        color: $black;
+      }
+      .nav-logo {
+        display: block;
+      }
+      nav {
+        display: inline-block;
+        ul {
           display: flex;
           flex-direction: column;
-          justify-content: center;
-          margin-left: 10px; 
-          span:nth-child(1) {
-            font-size: 15px;
-            color: $black;
+          li {
+            margin: 10px 0;
           }
-          span:nth-child(2) {
-            font-size: 12px;
-            color: $text-color;
-          font-weight: 300; 
-          letter-spacing: 0.5px;
+        }
+      }
+    }
+  }
+  
+  nav {
+    ul {
+      list-style: none;
+      padding-left: 0;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      li {
+        margin: 0 10px;
+        .nav-menu-item {
+          font-size: 16px;
+          text-transform: capitalize;
+          display: flex;
+          flex-direction: row;
+          text-decoration: none;
+          img {
+            width: 30px;
+          }
+          div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 10px; 
+            span:nth-child(1) {
+              font-size: 15px;
+              color: $black;
+            }
+            span:nth-child(2) {
+              font-size: 12px;
+              color: $text-color;
+              font-weight: 300; 
+              letter-spacing: 0.5px;
+            }
           }
         }
       }
@@ -132,6 +196,13 @@ nav {
       z-index: 3;
       width: inherit;
       transition: .3s;
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    
+
       #nav-btn, .nav-logo {
         display: none;
       }
@@ -170,11 +241,12 @@ nav {
       .nav-logo {
         display: inline-flex;
         align-items: center;
-        img {
+        .logo {
           width: 50px;
         }
       }
       nav {
+        display: block;
         ul {
           li {
             font-weight: 400;
@@ -189,7 +261,7 @@ nav {
                   color: $black;
                   &::after {
                     content: "";
-                    width: 40%;
+                    width: 45%;
                     left: 50%;
                     bottom: -16px;
                     right: 50%;
@@ -200,6 +272,19 @@ nav {
                     background-color: $primary-color;
                   }
                 }
+                &::after {
+                  content: "";
+                  width: 0;
+                  left: 50%;
+                  bottom: -16px;
+                  right: 50%;
+                  transform: translateX(-50%);
+                  transition: .3s;
+                  position: absolute;
+                  height: 2px;
+                  border-radius: 5px;
+                  background-color: transparent;
+                }
               }
             }
           }
@@ -208,7 +293,7 @@ nav {
     }
   }
   nav {
-    display: flex;
+    display: block;
     align-items: center;
     ul {
       list-style: none;

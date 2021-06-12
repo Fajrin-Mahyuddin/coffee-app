@@ -30,7 +30,7 @@ const StandartMenu = () => (
   <ul>
     <li className="mrl-20">
       <NavLink to="/dashboard" className="nav-menu-item active">
-        Home
+        Login
       </NavLink>
     </li>
     <li className="mrl-20">
