@@ -1,0 +1,19 @@
+.alert-danger {
+	background-color: $danger-color;
+	padding: 10px;
+	color: $white;
+	border-radius: 6px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.alert-success {
+	background-color: $success-color;
+	padding: 10px;
+	color: $white;
+	border-radius: 6px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-between;
+}

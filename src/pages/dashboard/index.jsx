@@ -7,11 +7,13 @@ import {
   RightOutlined,
   UserOutlined,
 } from '@ant-design/icons';
-import CreditCards from '../../../public/images/credit-cards.svg';
-import active from '../../../public/images/icons/active.svg';
-import iconsMountain from '../../../public/images/icons/icons-mountain.svg';
-import Cart from '../../../public/images/icons/cart.svg';
-import Car from '../../../public/images/icons/car.svg';
+import {
+  CreditCards,
+  active,
+  iconsMountain,
+  Cart,
+  Car,
+} from 'image';
 
 const DashboardPage = () => {
   // const [status, setStatus] = useState(50);

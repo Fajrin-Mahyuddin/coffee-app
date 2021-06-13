@@ -9,7 +9,6 @@ const resetToggle = (sidebar, content) => {
 };
 
 const toggleAction = (elementToggle, content) => {
-  console.log('element toggle', elementToggle);
   elementToggle.current.classList.toggle('open');
   content.current.classList.toggle('dark');
 };

@@ -5,13 +5,13 @@ import { resetToggle, toggleAction } from 'utils/drawer-helper';
 
 const MainLayout = ({ children }) => {
   const sideRef = createRef();
-  // const navRef = createRef();
+  const navRef = createRef();
   const contentRef = createRef();
 
   useEffect(() => {
     window.addEventListener('resize', () => resetToggle(sideRef, contentRef));
     return () => {
-      window.removeEventListener('resize', () => resetToggle(sideRef, contentRef));
+      window.removeEventListener('resize');
     };
   }, []);
 
@@ -26,7 +26,7 @@ const MainLayout = ({ children }) => {
           <Navbar
             menu="MainMenu"
             toggleAction={() => toggleAction(sideRef, contentRef)}
-          // refs={navRef}
+            ref={navRef}
           />
           <div className="content">
             {children}

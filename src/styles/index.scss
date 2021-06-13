@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 @import 'variables';
-@import 'navbar';
-@import 'sidebar';
-@import 'content';
-@import 'cards';
-@import 'table';
-@import 'form';
 
 body {
   margin: 0;
@@ -83,6 +77,16 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 8%;
 }
 
+.display-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.display-horizontal {
+	display: flex;
+	flex-direction: row;
+}
+
 .progress-bar {
   height: 7px;
   border-radius: 20px;
@@ -96,13 +100,4 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     height: inherit;
   }
-}
-
-.line-vertical {
-  top: 0;
-  right: 0;
-  width: 2px;
-  position: absolute;
-  height: inherit;
-  background-color: salmon;
 }

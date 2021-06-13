@@ -1,5 +1,6 @@
 $primary-color: #1766FF;
 $danger-color: #F42013;
+$success-color: #22BC33;
 $text-color: #c7c7c7;
 $light-grey: #f2f2f2;
 $dark-grey: #c0bebe;
@@ -9,3 +10,11 @@ $black: #404040;
 $white: #fff;
 $yellow: #FFC145;
 $blur-color: #ECECEC;
+
+@import 'navbar';
+@import 'sidebar';
+@import 'content';
+@import 'cards';
+@import 'table';
+@import 'form';
+@import 'alert';

@@ -21,6 +21,10 @@
     "rules": {
         "import/no-extraneous-dependencies": "off",
         "import/no-unresolved": "off",
-        "react/jsx-props-no-spreading": 0
+        "react/jsx-props-no-spreading": 0,
+        "arrow-body-style": [
+            "error",
+            0
+        ]
     }
 }

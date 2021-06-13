@@ -8,7 +8,7 @@ const StandartLayout = ({ children }) => {
   const contentRef = useRef();
   return (
     <div className="standart">
-      <Navbar menu="StandartMenu" ref={navRef} toggleAction={() => toggleAction(navRef, contentRef)} className="container standart-nav" />
+      <Navbar menu="StandartMenu" ref={navRef} toggleAction={() => toggleAction(navRef, contentRef)} className="container" />
       <ContentWrapper ref={contentRef}>
         {children}
       </ContentWrapper>

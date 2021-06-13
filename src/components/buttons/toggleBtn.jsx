@@ -1,11 +1,12 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { MenuOutlined } from '@ant-design/icons';
+import { CloseOutlined, MenuOutlined } from '@ant-design/icons';
 
-const ToggleBtn = ({ toggleAction }) => (
-  <div>
-    <MenuOutlined className="nav-btn" id="nav-btn" onClick={toggleAction} />
-  </div>
+const ToggleBtn = ({ toggleAction, id, className }) => (
+  <>
+    <CloseOutlined className={`${className} closeOutline`} id={id} onClick={toggleAction} />
+    <MenuOutlined className={`${className} MenuOutlined`} id={id} onClick={toggleAction} />
+  </>
 );
 
 export default ToggleBtn;
