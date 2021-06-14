@@ -19,11 +19,8 @@ const DashboardPage = () => {
   // const [status, setStatus] = useState(50);
   return (
     <MainLayout>
-      <>
-        <div className="title">
-          <h1>ini dashboard</h1>
-          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-        </div>
+
+      <MainLayout.Content>
         <div className="card-container">
           <div className="card-item card-shadow">
             <span className="title-card">Cards</span>
@@ -342,7 +339,7 @@ const DashboardPage = () => {
             </div>
           </div>
         </div>
-      </>
+      </MainLayout.Content>
     </MainLayout>
   );
 };

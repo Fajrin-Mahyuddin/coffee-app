@@ -5,14 +5,17 @@ import { ImgSvgBike, SnowWindy, TornadoSvg } from 'image';
 import { KeyOutlined, SendOutlined, UserOutlined } from '@ant-design/icons';
 
 const LoginPage = () => {
+
   const inputRef = useRef();
+
   const onSubmit = (e) => {
     e.preventDefault();
-    console.log('oke', e);
+    console.log('submt', e);
   }
+
   return (
     <StandartLayout>
-      <div className="content container">
+      <StandartLayout.Content>
         <div className="text-wrapper">
           <h2>
             Laundry App Login
@@ -22,28 +25,27 @@ const LoginPage = () => {
             onSubmit={onSubmit}
             closeALert={(e) => console.log(e)}
             className="form-vertical mtb-20"
-            alert={{ type: 'success', body: "Something Error !" }}
           >
             <InputText
+              error={false}
               ref={inputRef}
-              id="username-input"
               name="username"
-              placeholder="Username"
-              error={true}
               label="Username"
-              inputType="display-column"
+              id="username-input"
               Icons={UserOutlined}
+              placeholder="Username"
+              inputType="display-column"
               onChange={(e) => console.log(e)}
             />
             <InputText
-              ref={inputRef}
-              id="password-input"
-              name="password"
-              placeholder="Password"
               error={false}
+              ref={inputRef}
+              name="password"
               label="Password"
-              inputType="display-column"
+              id="password-input"
               Icons={KeyOutlined}
+              placeholder="Password"
+              inputType="display-column"
               onChange={(e) => console.log(e)}
             />
             <div className="display-horizontal mtb-10">
@@ -63,7 +65,7 @@ const LoginPage = () => {
           <ImgSvgBike />
           <TornadoSvg />
         </div>
-      </div>
+      </StandartLayout.Content>
     </StandartLayout>
   )
 };

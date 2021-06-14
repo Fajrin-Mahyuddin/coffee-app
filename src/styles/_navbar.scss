@@ -288,11 +288,17 @@
         ul {
           li {
             font-weight: 400;
+            display: flex;
             line-height: inherit;
             .nav-menu-item {
               position: relative;
               display: inline-flex;
+              align-items: center;
+              justify-content: center;
               font-size: 15px;
+              span {
+                margin-right: 5px;
+              }
               &:not(.btn) {
                 color: $text-color;
                 &.active, &:hover {

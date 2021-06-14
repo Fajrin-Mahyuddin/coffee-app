@@ -58,12 +58,15 @@
 					border: 1px solid inherit;
 					outline: none;
 				}
+				&.error {
+					border: 1px solid $danger-color;
+				}
+				&.success {
+					border: 1px solid $success-color;
+				}
 			}
 			.form-icon + .input {
 				padding: 8px 30px;
-			}
-			@at-root .error {
-					border: 1px solid red !important;
 			}
 		}
 	}
@@ -84,10 +87,7 @@
 				background-color: $light-grey;
 				padding: 2px;
 				border-radius: 50%;
-				color: black;
-			}
-			.error + .form-icon {
-				color: red;
+				color: $black;
 			}
 		}
 	}
@@ -103,10 +103,4 @@
 	}
 }
 
-// .input.error {
-// 	border: 1px solid $danger-color !important;
-// }
-
-.input.success {
-	border: 1px solid $success-color !important;
-}
+	

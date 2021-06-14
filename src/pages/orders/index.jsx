@@ -3,7 +3,12 @@ import { MainLayout } from 'layout';
 
 const OrderPage = () => (
   <MainLayout>
-    <h1>ini order page</h1>
+    <MainLayout.Content>
+      <div className="title">
+        <h1>List Orders</h1>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+      </div>
+    </MainLayout.Content>
   </MainLayout>
 );
 

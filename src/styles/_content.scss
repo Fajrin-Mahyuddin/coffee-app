@@ -86,30 +86,33 @@
       width: 91vw;
       margin-left: 9vw;
       position: relative;
+      padding: 10px;
       overflow: hidden;
+      background-color: $light-grey;
+      .title {
+        margin-bottom: 15px;
+        h1 {
+          font-weight: 400;
+          font-size: 1.9rem;
+          text-transform: capitalize;
+          padding-bottom: 0;
+          margin-bottom: 0;
+        }
+        span {
+          font-size: 12px;
+          color: $text-color;
+          font-weight: 300;
+          letter-spacing: .5px;
+          text-transform: capitalize;
+        }
+      }
       .content {
         min-height: 100vh;
         position: relative;
         padding: 15px 15px 20px 15px;
         display: flex;
         flex-direction: column;
-        .title {
-          margin-bottom: 30px;
-          h1 {
-            font-weight: 400;
-            font-size: 1.5rem;
-            text-transform: capitalize;
-            padding-bottom: 0;
-            margin-bottom: 0;
-          }
-          span {
-            font-size: 12px;
-            color: $text-color;
-            font-weight: 300;
-            letter-spacing: .5px;
-            text-transform: capitalize;
-          }
-        }
+        background-color: $white;
       } 
     } 
   }
@@ -121,29 +124,32 @@
       margin-left: 18%;
       position: relative;
       overflow: hidden;
+      padding: 10px;
+      background-color: $white;
+      .title {
+        margin-bottom: 15px;
+        h1 {
+          font-weight: 400;
+          font-size: 1.9rem;
+          text-transform: capitalize;
+          padding-bottom: 0;
+          margin-bottom: 0;
+        }
+        span {
+          font-size: 12px;
+          color: $text-color;
+          font-weight: 300;
+          letter-spacing: .5px;
+          text-transform: capitalize;
+        }
+      }
       .content {
+        border-radius: 10px;
         min-height: 100vh;
         position: relative;
         padding: 15px 15px 20px 15px;
         display: flex;
         flex-direction: column;
-        .title {
-          margin-bottom: 30px;
-          h1 {
-            font-weight: 400;
-            font-size: 1.9rem;
-            text-transform: capitalize;
-            padding-bottom: 0;
-            margin-bottom: 0;
-          }
-          span {
-            font-size: 12px;
-            color: $text-color;
-            font-weight: 300;
-            letter-spacing: .5px;
-            text-transform: capitalize;
-          }
-        }
       } 
     } 
   }

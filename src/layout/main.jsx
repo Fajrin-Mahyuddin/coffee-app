@@ -3,6 +3,18 @@ import React, { createRef, useEffect } from 'react';
 import { ContentWrapper, Navbar, Sidebar } from 'components';
 import { resetToggle, toggleAction } from 'utils/drawer-helper';
 
+const Content = ({ children }) => {
+  return (
+    <>
+      <div className="title">
+        <h1>Dashboard</h1>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+      </div>
+      <div className="content">{children}</div>
+    </>
+  )
+}
+
 const MainLayout = ({ children }) => {
   const sideRef = createRef();
   const navRef = createRef();
@@ -28,13 +40,13 @@ const MainLayout = ({ children }) => {
             toggleAction={() => toggleAction(sideRef, contentRef)}
             ref={navRef}
           />
-          <div className="content">
-            {children}
-          </div>
+          {children}
         </>
       </ContentWrapper>
     </div>
   );
 };
+
+MainLayout.Content = Content;
 
 export default MainLayout;
