@@ -16,11 +16,13 @@ import {
 } from 'image';
 
 const DashboardPage = () => {
-  // const [status, setStatus] = useState(50);
+
   return (
     <MainLayout>
-
-      <MainLayout.Content>
+      <MainLayout.Content
+        title="dashboard"
+        desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, fuga"
+      >
         <div className="card-container">
           <div className="card-item card-shadow">
             <span className="title-card">Cards</span>

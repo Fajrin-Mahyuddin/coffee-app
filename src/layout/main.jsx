@@ -3,12 +3,12 @@ import React, { createRef, useEffect } from 'react';
 import { ContentWrapper, Navbar, Sidebar } from 'components';
 import { resetToggle, toggleAction } from 'utils/drawer-helper';
 
-const Content = ({ children }) => {
+const Content = ({ children, title, desc }) => {
   return (
     <>
       <div className="title">
-        <h1>Dashboard</h1>
-        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+        <h1>{title}</h1>
+        <span>{desc}</span>
       </div>
       <div className="content">{children}</div>
     </>

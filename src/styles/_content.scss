@@ -88,12 +88,12 @@
       position: relative;
       padding: 10px;
       overflow: hidden;
-      background-color: $light-grey;
+      background-color: $white;
       .title {
         margin-bottom: 15px;
         h1 {
           font-weight: 400;
-          font-size: 1.9rem;
+          font-size: 1.3rem;
           text-transform: capitalize;
           padding-bottom: 0;
           margin-bottom: 0;
@@ -125,12 +125,11 @@
       position: relative;
       overflow: hidden;
       padding: 10px;
-      background-color: $white;
       .title {
         margin-bottom: 15px;
         h1 {
           font-weight: 400;
-          font-size: 1.9rem;
+          font-size: 1.5rem;
           text-transform: capitalize;
           padding-bottom: 0;
           margin-bottom: 0;
@@ -150,6 +149,7 @@
         padding: 15px 15px 20px 15px;
         display: flex;
         flex-direction: column;
+        background-color: $white;
       } 
     } 
   }
