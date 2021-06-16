@@ -1,23 +1,35 @@
-import Form from './inputs/form';
+// others
+import Table from './tables/table';
 import Navbar from './headers/navbar';
 import Sidebar from './sidebars/sidebar';
-import Table from './tables/table'
+import ContentWrapper from './templates/contentWrapper';
+
+// form
+import Form from './inputs/form';
 import InputText from './inputs/InputText';
+import InputWithButton from './inputs/inputWithButton';
+
+// buttons
+import Paginate from './buttons/paginate';
 import SubmitBtn from './buttons/submitBtn';
 import ToggleBtn from './buttons/toggleBtn';
-import InputAlert from './alerts/inputAlert';
 import BorderLessBtn from './buttons/borderLessBtn';
-import ContentWrapper from './templates/contentWrapper';
+
+// alerts
+import InputAlert from './alerts/inputAlert';
+
 
 export {
   Form,
   Table,
   Navbar,
   Sidebar,
+  Paginate,
   InputText,
   SubmitBtn,
   ToggleBtn,
   InputAlert,
   BorderLessBtn,
   ContentWrapper,
+  InputWithButton,
 };

@@ -3,7 +3,7 @@
     position: relative;
     .content-wrapper {
       width: 100vw;
-      background-color: #fafafa;
+      background-color: $smooth-white;
       transition: .3s;
       position: relative;
       .content {
@@ -84,11 +84,14 @@
   .main {
      .content-wrapper {
       width: 91vw;
+      min-height: 100vh;
       margin-left: 9vw;
       position: relative;
       padding: 10px;
+      display: flex;
+      flex-direction: column;
+      background-color: $smooth-white;
       overflow: hidden;
-      background-color: $white;
       .title {
         margin-bottom: 15px;
         h1 {
@@ -107,11 +110,9 @@
         }
       }
       .content {
-        min-height: 100vh;
-        position: relative;
+        flex: 1;
         padding: 15px 15px 20px 15px;
-        display: flex;
-        flex-direction: column;
+        border-radius: 10px;
         background-color: $white;
       } 
     } 
@@ -121,12 +122,14 @@
   .main {
     .content-wrapper {
       width: 82%;
+      min-height: 100vh;
       margin-left: 18%;
       position: relative;
       overflow: hidden;
-      padding: 10px;
+      display: flex;
+      flex-direction: column;
       .title {
-        margin-bottom: 15px;
+        margin-bottom: 2%;
         h1 {
           font-weight: 400;
           font-size: 1.5rem;
@@ -144,11 +147,9 @@
       }
       .content {
         border-radius: 10px;
-        min-height: 100vh;
+        flex: 1;
         position: relative;
         padding: 15px 15px 20px 15px;
-        display: flex;
-        flex-direction: column;
         background-color: $white;
       } 
     } 

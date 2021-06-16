@@ -2,9 +2,10 @@
 import React, { forwardRef } from 'react';
 import {
   AppstoreOutlined,
-  OrderedListOutlined,
+  ProfileOutlined,
   CreditCardOutlined,
   CloseCircleOutlined,
+  FieldTimeOutlined,
 } from '@ant-design/icons';
 import { Link, NavLink } from 'react-router-dom';
 
@@ -28,7 +29,7 @@ const Sidebar = (props, ref) => {
           </li>
           <li>
             <NavLink to="/order">
-              <OrderedListOutlined />
+              <ProfileOutlined />
               <span>Orders</span>
             </NavLink>
           </li>
@@ -39,8 +40,8 @@ const Sidebar = (props, ref) => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/payment">
-              <AppstoreOutlined />
+            <NavLink to="/history">
+              <FieldTimeOutlined />
               <span>History</span>
             </NavLink>
           </li>
@@ -52,11 +53,5 @@ const Sidebar = (props, ref) => {
     </aside>
   );
 };
-// Sidebar.propTypes = {
-//   refs: PropTypes.oneOfType([
-//     PropTypes.func,
-//     PropTypes.instanceOf(Component),
-//   ]).isRequired,
-// };
 
 export default forwardRef(Sidebar);

@@ -294,15 +294,10 @@
     display: column;
     columns: 2;
     column-gap: 20px;
-    
     .card-item {
       break-inside: avoid;
       margin-bottom: 20px;
       padding: 10px;
-      &:nth-child(3) {
-        position: relative;
-        padding: 0 20px 0 0;
-      }
       .title-card {
         font-size: 16px;
         padding-left: 10px;
@@ -589,10 +584,6 @@
       break-inside: avoid;
       padding: 10px;
       transform: translateZ(0);
-      &:nth-child(3) {
-        position: relative;
-        padding: 0 20px 0 0;
-      }
       .title-card {
         font-size: 16px;
         padding-left: 10px;

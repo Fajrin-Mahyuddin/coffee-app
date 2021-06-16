@@ -1,8 +1,11 @@
 $primary-color: #1766FF;
+$primary-trasparent: #4983f8b4;
 $danger-color: #F42013;
 $success-color: #22BC33;
+$info-color: #34B5E7;
 $text-color: #c7c7c7;
 $light-grey: #f2f2f2;
+$smooth-white: #fafafa;
 $dark-grey: #c0bebe;
 $active-menu: #f0f7ff;
 $active-text-menu: #197BBD;
@@ -11,10 +14,13 @@ $white: #fff;
 $yellow: #FFC145;
 $blur-color: #ECECEC;
 
+
 @import 'navbar';
 @import 'sidebar';
 @import 'content';
 @import 'cards';
+@import 'button';
 @import 'table';
 @import 'form';
 @import 'alert';
+@import 'input';

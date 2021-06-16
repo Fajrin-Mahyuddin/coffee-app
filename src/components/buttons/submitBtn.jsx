@@ -1,5 +1,5 @@
-import { LoadingOutlined } from '@ant-design/icons';
 import React from 'react';
+import { LoadingOutlined } from '@ant-design/icons';
 
 const SubmitBtn = ({ type, label, Icons, loading, ...props }) => {
 	return (

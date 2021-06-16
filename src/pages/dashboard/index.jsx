@@ -5,18 +5,17 @@ import {
   LeftOutlined,
   PlusOutlined,
   RightOutlined,
-  UserOutlined,
 } from '@ant-design/icons';
 import {
   CreditCards,
   active,
-  iconsMountain,
   Cart,
   Car,
 } from 'image';
+import { dataTables, headerDashboardTable } from 'config/data-dummy';
+import { Table } from 'components';
 
 const DashboardPage = () => {
-
   return (
     <MainLayout>
       <MainLayout.Content
@@ -76,190 +75,37 @@ const DashboardPage = () => {
               History of Transaction
             </span>
             <div className="card-body">
-              <table className="tables">
-                <thead>
-                  <tr>
-                    <th className="left">Receiver</th>
-                    <th className="left">Type</th>
-                    <th className="left">Date</th>
-                    <th className="right">Amount</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <UserOutlined />
-                      Fajrin
-                    </td>
-                    <td className="blur">Sport</td>
-                    <td className="blur">3 Jun 2021</td>
-                    <td className="bold right">IDR 20,000</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <UserOutlined />
-                      Mahyuddin
-                    </td>
-                    <td className="blur">Food</td>
-                    <td className="blur">2 Jun 2021</td>
-                    <td className="bold right">IDR 200,000</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <UserOutlined />
-                      Mahyuddin
-                    </td>
-                    <td className="blur">Food</td>
-                    <td className="blur">2 Jun 2021</td>
-                    <td className="bold right">IDR 200,000</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <UserOutlined />
-                      Mahyuddin
-                    </td>
-                    <td className="blur">Food</td>
-                    <td className="blur">2 Jun 2021</td>
-                    <td className="bold right">IDR 200,000</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <UserOutlined />
-                      Mahyuddin
-                    </td>
-                    <td className="blur">Food</td>
-                    <td className="blur">2 Jun 2021</td>
-                    <td className="bold right">IDR 200,000</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <UserOutlined />
-                      Mahyuddin
-                    </td>
-                    <td className="blur">Food</td>
-                    <td className="blur">2 Jun 2021</td>
-                    <td className="bold right">IDR 200,000</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <UserOutlined />
-                      Mahyuddin
-                    </td>
-                    <td className="blur">Food</td>
-                    <td className="blur">2 Jun 2021</td>
-                    <td className="bold right">IDR 200,000</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <UserOutlined />
-                      Mahyuddin
-                    </td>
-                    <td className="blur">Food</td>
-                    <td className="blur">2 Jun 2021</td>
-                    <td className="bold right">IDR 200,000</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <UserOutlined />
-                      Mahyuddin
-                    </td>
-                    <td className="blur">Food</td>
-                    <td className="blur">2 Jun 2021</td>
-                    <td className="bold right">IDR 200,000</td>
-                  </tr>
-                </tbody>
-              </table>
+              <Table headTable={headerDashboardTable} dataTable={dataTables} />
             </div>
           </div>
           {/* end of 2th card */}
-          <div className="card-item">
+          <div className="card-item card-shadow">
             <span className="title-card">
-              Goals
-              {' '}
-              <PlusOutlined />
+              List Users
             </span>
-            <LeftOutlined className="left-goals" />
-            <RightOutlined className="right-goals" />
             <div className="card-body">
-              <div className="goals-container">
-                <div className="goals card-shadow">
-                  <div className="head-goals flex-columns">
-                    <span className="price">
-                      IDR 5000
-                    </span>
-                    <span className="date">23/02/2020</span>
+              <ul className="list-users">
+                <li>
+                  <img src={Car} alt="users" />
+                  <i>Ani</i>
+                </li>
+                <li>
+                  <img src={Cart} alt="users1" />
+                  <i>Nona</i>
+                </li>
+                <li>
+                  <img src={Car} alt="users2" />
+                  <i>Leni</i>
+                </li>
+                <li>
+                  <div className="button-wrapper">
+                    <button type="button">
+                      <PlusOutlined className="new-user" />
+                    </button>
                   </div>
-                  <div className="footer-goals">
-                    <img src={iconsMountain} alt="icon-one" />
-                    Holiday
-                  </div>
-                </div>
-                <div className="space" />
-                <div className="goals card-shadow">
-                  <div className="head-goals flex-columns">
-                    <span className="price">
-                      IDR 5000
-                    </span>
-                    <span className="date">23/02/2020</span>
-                  </div>
-                  <div className="footer-goals">
-                    <img src={iconsMountain} alt="icon-one" />
-                    Holiday
-                  </div>
-                </div>
-                <div className="space" />
-                <div className="goals card-shadow">
-                  <div className="head-goals flex-columns">
-                    <span className="price">
-                      IDR 5000
-                    </span>
-                    <span className="date">23/02/2020</span>
-                  </div>
-                  <div className="footer-goals">
-                    <img src={iconsMountain} alt="icon-one" />
-                    Holiday
-                  </div>
-                </div>
-                <div className="space" />
-                <div className="goals card-shadow">
-                  <div className="head-goals flex-columns">
-                    <span className="price">
-                      IDR 5000
-                    </span>
-                    <span className="date">23/02/2020</span>
-                  </div>
-                  <div className="footer-goals">
-                    <img src={iconsMountain} alt="icon-one" />
-                    Holiday
-                  </div>
-                </div>
-                <div className="space" />
-                <div className="goals card-shadow">
-                  <div className="head-goals flex-columns">
-                    <span className="price">
-                      IDR 5000
-                    </span>
-                    <span className="date">23/02/2020</span>
-                  </div>
-                  <div className="footer-goals">
-                    <img src={iconsMountain} alt="icon-one" />
-                    Holiday
-                  </div>
-                </div>
-                <div className="space" />
-                <div className="goals card-shadow">
-                  <div className="head-goals flex-columns">
-                    <span className="price">
-                      IDR 5000
-                    </span>
-                    <span className="date">23/02/2020</span>
-                  </div>
-                  <div className="footer-goals">
-                    <img src={iconsMountain} alt="icon-one" />
-                    Holiday
-                  </div>
-                </div>
-              </div>
+                  <i>Add New</i>
+                </li>
+              </ul>
             </div>
           </div>
           <div className="card-item">
@@ -311,35 +157,7 @@ const DashboardPage = () => {
               </div>
             </div>
           </div>
-          <div className="card-item card-shadow">
-            <span className="title-card">
-              List Users
-            </span>
-            <div className="card-body">
-              <ul className="list-users">
-                <li>
-                  <img src={Car} alt="users" />
-                  <i>Ani</i>
-                </li>
-                <li>
-                  <img src={Cart} alt="users1" />
-                  <i>Nona</i>
-                </li>
-                <li>
-                  <img src={Car} alt="users2" />
-                  <i>Leni</i>
-                </li>
-                <li>
-                  <div className="button-wrapper">
-                    <button type="button">
-                      <PlusOutlined className="new-user" />
-                    </button>
-                  </div>
-                  <i>Add New</i>
-                </li>
-              </ul>
-            </div>
-          </div>
+
         </div>
       </MainLayout.Content>
     </MainLayout>

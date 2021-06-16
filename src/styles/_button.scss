@@ -1,0 +1,55 @@
+.primary-btn {
+  background-color: $primary-color;
+  color: $white;
+}
+
+.danger-btn {
+	background-color: $danger-color;
+	color: $white;
+}
+.info-btn {
+	background-color: $info-color;
+	color: $white;
+}
+
+.sm-btn {
+  padding: 8px 20px;
+}
+
+.xsm-btn {
+  padding: 4px 8px;
+}
+
+.btn {
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.paginate-wrapper {
+	display: flex;
+	flex-direction: row;
+	margin: 10px 0 0;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0;
+	.text-paginate {
+		color: $dark-grey;
+		font-size: 14px;
+		font-weight: 300;
+	}
+	.btn-paginate {
+		button {
+			margin: 0 2px;
+			border: none;
+			background-color: $active-text-menu;
+			color: $white;
+			padding: 5px 10px;
+			border-radius: 5px;
+			cursor: pointer;
+			&:disabled {
+				background-color: $primary-trasparent;
+			}
+		}
+	}
+}

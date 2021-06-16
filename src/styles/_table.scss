@@ -2,7 +2,7 @@ table.tables {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 1em .5em;
-  padding: 0 2em 1em 0;
+  // padding: 0 2em 1em 0;
   .bold {
     font-weight: 500;
     font-size: .7em;
@@ -16,14 +16,35 @@ table.tables {
   .blur {
     color: $text-color;
   }
+  .label-sm {
+    padding: 2px 5px;
+    border-radius: 3px;
+    color: $white;
+    font-size: 12px;
+    text-transform: lowercase;
+    background-color: $danger-color;
+  }
+  .label-primary {
+    background-color: $primary-color;
+  }
+  .label-danger {
+    background-color: $danger-color;
+  }
+  .label-info {
+    background-color: $info-color;
+  }
+
   thead {
+    &::after {
+      content: ' ';
+      position: relative;
+      display: block;
+      height: 10px;
+    }
     tr {
-      th {
-        font-weight: 300;
-        font-size: .9em;
-        color: $text-color;
-        padding-bottom: 8px;
-      }
+      font-weight: 400;
+      font-size: .9rem;
+      color: $black;
     }
   }
   tbody {
@@ -40,14 +61,11 @@ table.tables {
         padding: 7px 5px;
         font-weight: 300;
         font-size: .8em;
-        span {
-          background-color: #EFEFEF;
-          padding: 3px;
-          border-radius: 50%;
-          margin-right: 5px;
-        }
       }
-      
     }
   }
+}
+
+@media screen and (min-width: 1440px) {
+  
 }

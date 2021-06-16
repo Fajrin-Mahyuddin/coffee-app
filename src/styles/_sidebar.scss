@@ -228,7 +228,7 @@
             align-items: center;
             flex-direction: row;
             width: inherit;
-            padding: 10px 5px;
+            padding: 7px;
             span:nth-child(1) {
               margin-right: 10px;
               font-size: 17px;
@@ -243,14 +243,14 @@
               font-weight: 300;
             }
             &:hover {
-              background-color: $active-menu;
-              color: $active-text-menu;
+              background-color: $active-text-menu;
+              color: $white;
               border-radius: 7px;
             }
           }
           .active {
-            background-color: $active-menu;
-              color: $active-text-menu;
+            background-color: $active-text-menu;
+              color: $active-menu;
               border-radius: 7px;
           }
         }
