@@ -167,17 +167,9 @@ nav {
   .main {
     header {
       background-color: transparent;
-      position: fixed;
-      top: 0;
-      right: 0;
       z-index: 3;
-      width: inherit;
       transition: .3s;
       padding: 10px 20px;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
       .nav-btn, .nav-logo {
         display: none;
       }
@@ -195,6 +187,7 @@ nav {
       background-color: $white;
       height: 8%;
       z-index: 4;
+      top: 0;
       box-shadow: 0px 5px 8px -4px rgba(212, 209, 209, 0.574);
     }
   }
@@ -211,60 +204,28 @@ nav {
           li {
             margin: 0 5px;
             .nav-menu-item {
-              font-size: 13px;
-            }
-            .nav-menu-item:not(.btn) {
-              color: $text-color;
-            }
-          }
-        }
-      }
-    } 
-  }
-}
-@media screen and (min-width: 1024px) {
-  .standart {
-    header {
-      z-index: 3;
-      height: 10%;
-      flex-direction: row;
-      .hide-btn {
-        display: none;
-      }
-      .nav-logo {
-        .logo {
-          width: 50px;
-        }
-      }
-      nav {
-        ul {
-          li {
-            .nav-menu-item {
               position: relative;
               display: inline-flex;
               align-items: center;
               justify-content: center;
-              font-size: 15px;
-              span {
-                margin-right: 5px;
-              }
-              &:not(.btn) {
-                color: $text-color;
-                &.active, &:hover {
-                  color: $black;
-                  &::after {
-                    content: "";
-                    width: 45%;
-                    left: 50%;
-                    bottom: -16px;
-                    right: 50%;
-                    transform: translateX(-50%);
-                    position: absolute;
-                    height: 2px;
-                    border-radius: 5px;
-                    background-color: $primary-color;
+              font-size: 13px;
+                &:not(.btn) {
+                  color: $text-color;
+                  &.active, &:hover {
+                    color: $black;
+                    &::after {
+                      content: "";
+                      width: 45%;
+                      left: 50%;
+                      bottom: -16px;
+                      right: 50%;
+                      transform: translateX(-50%);
+                      position: absolute;
+                      height: 2px;
+                      border-radius: 5px;
+                      background-color: $primary-color;
+                    }
                   }
-                }
                 &::after {
                   content: "";
                   width: 0;
@@ -286,22 +247,47 @@ nav {
     } 
   }
 }
+@media screen and (min-width: 1024px) {
+  .standart {
+    header {
+      z-index: 3;
+      height: 10%;
+      .hide-btn {
+        display: none;
+      }
+      .nav-logo {
+        .logo {
+          width: 50px;
+        }
+      }
+      nav {
+        ul {
+          li {
+            margin: 0 10px;
+            .nav-menu-item {
+              position: relative;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 15px;
+              span {
+                margin-right: 5px;
+              }
+             
+            }
+          }
+        }
+      }
+    } 
+  }
+}
 
 @media screen and (min-width: 1240px) {
   .main {
     header {
-      background-color: transparent;
-      position: fixed;
       top: 0;
       right: 0;
-      z-index: 3;
-      width: inherit;
       transition: .3s;
-      padding: 10px 20px;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
       .nav-btn, .nav-logo {
         display: none;
       }
@@ -315,27 +301,16 @@ nav {
         }
       }
     }
-    header.bg-scrolled {
-      background-color: $white;
-      height: 8%;
-      z-index: 4;
-      box-shadow: 0px 5px 8px -4px rgba(212, 209, 209, 0.574);
-    }
+    // header.bg-scrolled {
+    //   background-color: $white;
+    //   height: 8%;
+    //   z-index: 4;
+    //   box-shadow: 0px 5px 8px -4px rgba(212, 209, 209, 0.574);
+    // }
   }
   .standart {
     header {
-      background-color: #fff;
-      position: fixed;
-      top: 0;
-      right: 0;
-      z-index: 3;
-      width: inherit;
-      transition: .3s;
-      display: flex;
       height: 12%;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
       .hide-btn {
         display: none;
       }
@@ -344,58 +319,6 @@ nav {
         align-items: center;
         .logo {
           width: 60px;
-        }
-      }
-      nav {
-        position: static;
-        transform: translateX(0);
-        ul {
-          li {
-            font-weight: 400;
-            display: flex;
-            line-height: inherit;
-            .nav-menu-item {
-              position: relative;
-              display: inline-flex;
-              align-items: center;
-              justify-content: center;
-              font-size: 15px;
-              span {
-                margin-right: 5px;
-              }
-              &:not(.btn) {
-                color: $text-color;
-                &.active, &:hover {
-                  color: $black;
-                  &::after {
-                    content: "";
-                    width: 45%;
-                    left: 50%;
-                    bottom: -16px;
-                    right: 50%;
-                    transform: translateX(-50%);
-                    position: absolute;
-                    height: 2px;
-                    border-radius: 5px;
-                    background-color: $primary-color;
-                  }
-                }
-                &::after {
-                  content: "";
-                  width: 0;
-                  left: 50%;
-                  bottom: -16px;
-                  right: 50%;
-                  transform: translateX(-50%);
-                  transition: .3s;
-                  position: absolute;
-                  height: 2px;
-                  border-radius: 5px;
-                  background-color: transparent;
-                }
-              }
-            }
-          }
         }
       }
     }
