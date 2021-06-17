@@ -1,0 +1,23 @@
+.input-group {
+	padding-bottom: 5px;
+	input {
+		width: 20%;
+		border: none;
+		padding: 5px 10px;
+		outline: none;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+		border-top: 1px solid $dark-grey;
+		border-left: 1px solid $dark-grey;
+		border-bottom: 1px solid $dark-grey;
+	}
+	button {
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+		border-top: 1px solid $dark-grey;
+		border-right: 1px solid $dark-grey;
+		border-bottom: 1px solid $dark-grey;
+		border-left: none;
+		padding: 5px 10px;
+	}
+}

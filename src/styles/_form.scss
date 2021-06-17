@@ -1,69 +1,59 @@
-@media screen and (max-width: 425px) {
-	.form-wrapper {
-		.input-wrapper {
-			position: relative;
-			label {
-				font-size: .9rem;
+.form-wrapper {
+	.input-wrapper {
+		position: relative;
+		label {
+			font-size: .9rem;
+		}
+		.input {
+			border-radius: 5px;
+			border: 1px solid $dark-grey;
+			padding: 8px 10px;
+			background-color: $white;
+			&:focus, &:active {
+				border: 1px solid inherit;
+				outline: none;
 			}
-			.input {
-				border-radius: 5px;
-				border: 1px solid $dark-grey;
-				padding: 8px 10px;
-				background-color: $white;
-				&:focus, &:active {
-					border: 1px solid inherit;
-					outline: none;
-				}
+			&.error {
+				border: 1px solid $danger-color;
 			}
-			.form-icon + .input {
-				padding: 8px 30px;
+			&.success {
+				border: 1px solid $success-color;
 			}
 		}
-	}
-	
-	.form-vertical {
-		display: flex;
-		flex-direction: column;
-		justify-content: left;
-		.input-wrapper {
-			margin: 10px 0;
-			label {
-				margin-bottom: 8px;
-			}
-			.form-icon {
-				position: absolute;
-				bottom: 7px;
-				left: 7px;
-				background-color: $light-grey;
-				padding: 2px;
-				border-radius: 50%;
-			}
+		.form-icon + .input {
+			padding: 8px 30px;
 		}
 	}
+}
+
+.form-vertical {
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	.input-wrapper {
+		margin: 10px 0;
+		label {
+			margin-bottom: 8px;
+		}
+		.form-icon {
+			position: absolute;
+			bottom: 7px;
+			left: 7px;
+			background-color: $light-grey;
+			padding: 2px;
+			border-radius: 50%;
+		}
+	}
+}
+.search-form {
+	position: relative;
 }
 
 @media screen and (min-width: 1240px) {
 	.form-wrapper {
 		.input-wrapper {
-			position: relative;
-			label {
-				font-size: .9rem;
-			}
 			.input {
-				border-radius: 5px;
-				border: 1px solid $dark-grey;
-				padding: 8px 10px;
 				background-color: transparent;
-				&:focus, &:active {
-					border: 1px solid inherit;
-					outline: none;
-				}
-				&.error {
-					border: 1px solid $danger-color;
-				}
-				&.success {
-					border: 1px solid $success-color;
-				}
 			}
 			.form-icon + .input {
 				padding: 8px 30px;
@@ -72,28 +62,13 @@
 	}
 	
 	.form-vertical {
-		display: flex;
-		flex-direction: column;
-		justify-content: left;
 		.input-wrapper {
-			margin: 10px 0;
-			label {
-				margin-bottom: 8px;
-			}
 			.form-icon {
-				position: absolute;
-				bottom: 7px;
-				left: 7px;
-				background-color: $light-grey;
-				padding: 2px;
-				border-radius: 50%;
 				color: $black;
 			}
 		}
 	}
-	.search-form {
-		position: relative;
-	}
+
 }
 
 @media screen and (min-width: 1440px) {

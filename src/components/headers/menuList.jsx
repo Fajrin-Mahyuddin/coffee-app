@@ -52,7 +52,7 @@ const StandartMenu = () => (
         About us
       </Link>
     </li>
-    <li className="mrl-20">
+    <li>
       <NavLink className="nav-menu-item btn primary-btn sm-btn" to="/login">
         <LogoutOutlined />
         Sign up

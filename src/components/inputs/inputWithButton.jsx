@@ -1,13 +1,13 @@
 import React from 'react'
 
-const InputWithButton = ({ Icon, ...props }) => {
+const InputWithButton = ({ className, disabled, Icon, ...props }) => {
 	return (
-		<>
-			<input type="text" {...props} />
-			<button type="button">
+		<div className={className}>
+			<input disabled={disabled} type="text" {...props} />
+			<button disabled={disabled} type="button">
 				<Icon />
 			</button>
-		</>
+		</div>
 	)
 }
 

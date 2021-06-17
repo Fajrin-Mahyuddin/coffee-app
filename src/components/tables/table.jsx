@@ -8,6 +8,7 @@ import React from 'react';
 // 		email: "baco@gmail.com",
 // 		jumlah: 2,
 // 		harga: 6000,
+// 		classRow: "right",
 // 		keterangan: { cell: [<span className="label-danger label-sm">success</span>], classCell: "right" },
 // 		action: {
 // 			cell: [
@@ -19,10 +20,11 @@ import React from 'react';
 // 	},
 // ];
 
-// jika ingin menambah class gunakan object dengan keys cell(array) dan classCell(string)
-// object keys CELL harus ber-type ARRAY
-// gunakan object keys CELL(array) untuk menambah sebuah element HTML dalam cell
-// gunakan classCell untuk memberikan style pada cell
+// jika ingin menambah class gunakan object dengan keys cell(array) dan classCell(string);
+// object keys CELL harus ber-type ARRAY;
+// gunakan classRow pada root object untuk memberikan style pada row;
+// gunakan object keys CELL(array) untuk menambah sebuah element HTML dalam cell;
+// gunakan classCell untuk memberikan style pada cell;
 
 const TdAction = (item, i) => {
 	return <span key={i}>{item}</span>
@@ -31,7 +33,7 @@ const TdAction = (item, i) => {
 const TBody = ({ data, headTable }) => {
 	const headerArr = Object.keys(headTable);
 	return (
-		<tr>
+		<tr className={data.classRow}>
 			{headerArr.map((list, i) => {
 				return typeof data[list] === "object" ?
 					<td className={data[list]?.classCell} key={i}>{data[list].cell.map(TdAction)}</td> :
@@ -46,10 +48,10 @@ const THead = ({ data }) => {
 		<td>{data}</td>
 };
 
-const Table = ({ headTable, dataTable }) => {
+const Table = ({ headTable, dataTable, loading }) => {
 	headTable ?? console.error('headTable of props table is', headTable);
 	return (
-		<table className="tables">
+		<table className={`tables ${loading && 'loading'}`}>
 			<thead>
 				<tr>
 					{Object.values(headTable).map((item, i) => {

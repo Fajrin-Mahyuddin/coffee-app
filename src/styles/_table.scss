@@ -1,8 +1,51 @@
+  .label-sm {
+    padding: 2px 5px;
+    border-radius: 3px;
+    color: $black;
+    font-size: 12px;
+    text-transform: capitalize;
+    background-color: $light-grey;
+  }
+  .label-primary {
+    color: $white;
+    background-color: $primary-color;
+  }
+  .label-danger {
+    color: $white;
+    background-color: $danger-color;
+  }
+  .label-info {
+    color: $white;
+    background-color: $info-color;
+  }
+  .label-success {
+    color: $white;
+    background-color: $success-color;
+  }
+  .label-warning {
+    color: $white;
+    background-color: $warning-color;
+  }
 table.tables {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 1em .5em;
-  // padding: 0 2em 1em 0;
+  position: relative;
+  &.loading {
+    &::after {
+      content: "";
+      background-image: url('../../public/images/icons/loading.gif');
+      background-size: 15px;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      background-color: rgba(251, 251, 251, 0.656);
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
   .bold {
     font-weight: 500;
     font-size: .7em;
@@ -13,26 +56,13 @@ table.tables {
   .left {
     text-align: left;
   }
+  .center {
+    text-align: center;
+  }
   .blur {
     color: $text-color;
   }
-  .label-sm {
-    padding: 2px 5px;
-    border-radius: 3px;
-    color: $white;
-    font-size: 12px;
-    text-transform: lowercase;
-    background-color: $danger-color;
-  }
-  .label-primary {
-    background-color: $primary-color;
-  }
-  .label-danger {
-    background-color: $danger-color;
-  }
-  .label-info {
-    background-color: $info-color;
-  }
+
 
   thead {
     &::after {
@@ -45,6 +75,7 @@ table.tables {
       font-weight: 400;
       font-size: .9rem;
       color: $black;
+      text-transform: capitalize;
     }
   }
   tbody {

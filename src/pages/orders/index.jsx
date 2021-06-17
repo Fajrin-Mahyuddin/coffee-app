@@ -12,12 +12,10 @@ const OrderPage = () => (
     >
       <div className="card-shadow p-10">
         <div className="search-form mtb-10">
-          <InputWithButton Icon={SearchOutlined} />
+          <InputWithButton className="input-group" placeholder="search" Icon={SearchOutlined} />
         </div>
-        <Table headTable={headerForOrders} dataTable={dataTables} />
-        <div className="paginate">
-          <Paginate />
-        </div>
+        <Table headTable={headerForOrders} dataTable={dataTables} loading={false} />
+        <Paginate />
       </div>
     </MainLayout.Content>
   </MainLayout>

@@ -17,7 +17,9 @@ h1, h2, h3, h4, h5, h6 {
   box-sizing: border-box;
 }
 
-
+hr {
+  border-top:1px solid $light-grey;
+}
 
 .main {
   width: 100%;
@@ -33,6 +35,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .p-10 {
   padding: 10px;
+}
+
+.ptb-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .mb-10 {
@@ -61,6 +68,13 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 20px;
 }
 
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+
 .mr-5 {
   margin-right: 5px;
 }
@@ -75,7 +89,9 @@ h1, h2, h3, h4, h5, h6 {
 .container {
   padding: 0 8%;
 }
-
+.center-text {
+  text-align: center;
+}
 .display-column {
 	display: flex;
 	flex-direction: column;

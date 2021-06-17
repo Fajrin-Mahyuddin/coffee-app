@@ -12,7 +12,7 @@ import {
   Cart,
   Car,
 } from 'image';
-import { dataTables, headerDashboardTable } from 'config/data-dummy';
+import { dataHistory, headerDashboardTable } from 'config/data-dummy';
 import { Table } from 'components';
 
 const DashboardPage = () => {
@@ -75,7 +75,7 @@ const DashboardPage = () => {
               History of Transaction
             </span>
             <div className="card-body">
-              <Table headTable={headerDashboardTable} dataTable={dataTables} />
+              <Table headTable={headerDashboardTable} dataTable={dataHistory} />
             </div>
           </div>
           {/* end of 2th card */}
