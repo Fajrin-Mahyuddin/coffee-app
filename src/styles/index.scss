@@ -100,6 +100,7 @@ hr {
 .display-horizontal {
 	display: flex;
 	flex-direction: row;
+  align-items: center;
 }
 
 .progress-bar {
@@ -115,4 +116,9 @@ hr {
     left: 0;
     height: inherit;
   }
+}
+
+.remember_me + label {
+  font-size: 14px;
+  color: $black;
 }

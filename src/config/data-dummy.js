@@ -19,7 +19,7 @@ const dataTables = [
 		email: "baco@gmail.com",
 		keterangan: { cell: [<span className="label-success label-sm">new</span>] },
 		action: {
-			cell: [<SubmitBtn Icons={DeleteOutlined} loading={false} type="button" className="btn info-btn xsm-btn" />],
+			cell: [<SubmitBtn icon={DeleteOutlined} loading={false} type="button" className="btn info-btn xsm-btn" />],
 			classCell: "right"
 		}
 	},
@@ -30,7 +30,7 @@ const dataTables = [
 		email: "baco@gmail.com",
 		keterangan: { cell: [<span className="label-danger label-sm">cancel</span>] },
 		action: {
-			cell: [<SubmitBtn Icons={DeleteOutlined} loading={false} type="button" className="btn info-btn xsm-btn" />],
+			cell: [<SubmitBtn icon={DeleteOutlined} loading={false} type="button" className="btn info-btn xsm-btn" />],
 			classCell: "right"
 		}
 	},
@@ -41,7 +41,7 @@ const dataTables = [
 		email: "baco@gmail.com",
 		keterangan: { cell: [<span className="label-info label-sm">process</span>] },
 		action: {
-			cell: [<SubmitBtn Icons={DeleteOutlined} loading={false} type="button" className="btn info-btn xsm-btn" />],
+			cell: [<SubmitBtn icon={DeleteOutlined} loading={false} type="button" className="btn info-btn xsm-btn" />],
 			classCell: "right"
 		}
 	},
@@ -52,7 +52,7 @@ const dataTables = [
 		email: "baco@gmail.com",
 		keterangan: { cell: [<span className="label-danger label-sm">cancel</span>] },
 		action: {
-			cell: [<SubmitBtn Icons={DeleteOutlined} loading={false} type="button" className="btn info-btn xsm-btn" />],
+			cell: [<SubmitBtn icon={DeleteOutlined} loading={false} type="button" className="btn info-btn xsm-btn" />],
 			classCell: "right"
 		}
 	},
@@ -80,8 +80,8 @@ const dataHistory = [
 		},
 		action: {
 			cell: [
-				<SubmitBtn Icons={UserOutlined} loading={false} type="button" className="btn info-btn xsm-btn mr-5" />,
-				<SubmitBtn Icons={DeleteOutlined} loading={false} type="button" className="btn danger-btn xsm-btn" />
+				<SubmitBtn icon={UserOutlined} loading={false} type="button" className="btn info-btn xsm-btn mr-5" />,
+				<SubmitBtn icon={DeleteOutlined} loading={false} type="button" className="btn danger-btn xsm-btn" />
 			],
 			classCell: 'right'
 		}
@@ -107,8 +107,8 @@ const dataHistory = [
 		},
 		action: {
 			cell: [
-				<SubmitBtn Icons={UserOutlined} loading={false} type="button" className="btn info-btn xsm-btn mr-5" />,
-				<SubmitBtn Icons={DeleteOutlined} loading={false} type="button" className="btn danger-btn xsm-btn" />
+				<SubmitBtn icon={UserOutlined} loading={false} type="button" className="btn info-btn xsm-btn mr-5" />,
+				<SubmitBtn icon={DeleteOutlined} loading={false} type="button" className="btn danger-btn xsm-btn" />
 			],
 			classCell: 'right'
 		}

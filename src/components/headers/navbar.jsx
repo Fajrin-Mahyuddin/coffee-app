@@ -21,7 +21,7 @@ const Navbar = ({
         <ToggleBtn className="nav-btn" id="nav-btn" toggleAction={toggleAction} />
       </div>
       <div className="nav-logo">
-        <img src="favicon.svg" className="logo" alt="logo" />
+        <img src="/favicon.svg" className="logo" alt="logo" />
       </div>
       <NavMenu menu={menu} />
     </header>

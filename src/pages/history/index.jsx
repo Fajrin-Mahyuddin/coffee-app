@@ -9,7 +9,7 @@ const History = () => (
 		<MainLayout.Content title="history" desc="Daftar penjualan terakhir">
 			<div className="card-shadow p-10">
 				<div className="search-form mtb-10">
-					<InputWithButton className="input-group" placeholder="search" Icon={SearchOutlined} />
+					<InputWithButton className="input-group" placeholder="search" icon={SearchOutlined} />
 				</div>
 				<Table headTable={headerHistoryTable} dataTable={dataHistory} loading={false} />
 				<Paginate />

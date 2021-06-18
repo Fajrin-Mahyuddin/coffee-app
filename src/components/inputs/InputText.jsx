@@ -4,7 +4,7 @@ import React, { forwardRef } from 'react';
 const InputText = ({
   id,
   label,
-  Icons,
+  icon: Icon,
   inputType,
   error,
   ...props
@@ -14,7 +14,7 @@ const InputText = ({
       <label htmlFor={id}>
         {label}
       </label>
-      {Icons && <Icons className="form-icon" />}
+      {Icon && <Icon className="form-icon" />}
       <input
         id={id}
         type="text"

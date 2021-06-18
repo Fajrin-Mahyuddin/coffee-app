@@ -23,7 +23,7 @@ const MainLayout = ({ children }) => {
   useEffect(() => {
     window.addEventListener('resize', () => resetToggle(sideRef, contentRef));
     return () => {
-      window.removeEventListener('resize');
+      window.removeEventListener('resize', () => resetToggle(sideRef, contentRef));
     };
   }, []);
 

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const InputWithButton = ({ className, disabled, Icon, ...props }) => {
+const InputWithButton = ({ className, disabled, icon: Icon, ...props }) => {
 	return (
 		<div className={className}>
 			<input disabled={disabled} type="text" {...props} />
