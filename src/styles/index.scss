@@ -42,6 +42,9 @@ hr {
   padding-bottom: 20px;
 }
 
+.mb-5 {
+  margin-bottom: 5px;
+}
 .mb-10 {
   margin-bottom: 10px;
 }
@@ -100,7 +103,6 @@ hr {
 .display-horizontal {
 	display: flex;
 	flex-direction: row;
-  align-items: center;
 }
 
 .progress-bar {
@@ -121,4 +123,8 @@ hr {
 .remember_me + label {
   font-size: 14px;
   color: $black;
+}
+
+.w-100 {
+  width: 100%;
 }

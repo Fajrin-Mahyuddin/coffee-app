@@ -30,36 +30,48 @@ const LoginPage = () => {
               onSubmit={onSubmit}
               className="form-vertical mtb-20"
             >
-              <InputAlert alert={null} onClick={() => console.log("alert")} />
-              <InputText
-                error={false}
-                ref={inputRef}
-                name="username"
-                label="Username"
-                id="username-input"
-                icon={UserOutlined}
-                placeholder="Username"
-                inputType="display-column"
-                onChange={(e) => console.log(e)}
-              />
-              <InputText
-                error={false}
-                ref={inputRef}
-                name="password"
-                label="Password"
-                id="password-input"
-                icon={KeyOutlined}
-                placeholder="Password"
-                inputType="display-column"
-                onChange={(e) => console.log(e)}
-              />
+              <Form.Row>
+                <Form.Column className="mb-10">
+                  <InputAlert alert={null} />
+                </Form.Column>
+              </Form.Row>
+              <Form.Row>
+                <Form.Column className="mb-10">
+                  <InputText
+                    error={false}
+                    ref={inputRef}
+                    name="username"
+                    label="Username"
+                    id="username-input"
+                    icon={UserOutlined}
+                    placeholder="username"
+                    classWrapper="display-column column-item"
+                    onChange={(e) => console.log(e)}
+                  />
+                </Form.Column>
+              </Form.Row>
+              <Form.Row>
+                <Form.Column className="mb-10">
+                  <InputText
+                    error={false}
+                    ref={inputRef}
+                    name="password"
+                    label="Password"
+                    id="password-input"
+                    icon={KeyOutlined}
+                    placeholder="password"
+                    classWrapper="display-column column-item"
+                    onChange={(e) => console.log(e)}
+                  />
+                </Form.Column>
+              </Form.Row>
               <div className="display-horizontal">
                 <input type="checkbox" className="remember_me" id="remember_me" /><label htmlFor="remember_me">remember me</label>
               </div>
               <div className="display-horizontal mtb-20">
                 <SubmitBtn
                   type="submit"
-                  label="Submit"
+                  label="Login"
                   loading={false}
                   disabled={false}
                   icon={SendOutlined}

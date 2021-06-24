@@ -16,6 +16,7 @@ $yellow: #FFC145;
 $blur-color: #ECECEC;
 
 
+@import 'layout';
 @import 'navbar';
 @import 'sidebar';
 @import 'content';
@@ -27,3 +28,4 @@ $blur-color: #ECECEC;
 @import 'input';
 @import 'service';
 @import 'footer';
+@import 'order';

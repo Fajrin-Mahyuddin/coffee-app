@@ -5,12 +5,12 @@ const InputText = ({
   id,
   label,
   icon: Icon,
-  inputType,
+  classWrapper,
   error,
   ...props
 }, ref) => {
   return (
-    <div className={`input-wrapper ${inputType}`}>
+    <div className={`input-wrapper ${classWrapper}`}>
       <label htmlFor={id}>
         {label}
       </label>
