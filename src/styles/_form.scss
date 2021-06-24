@@ -33,6 +33,16 @@
 		.form-icon + .input {
 			padding: 8px 30px;
 		}
+		.radio-label {
+			display: flex;
+			align-items: center;
+			margin-left: 10px;
+			cursor: pointer;
+		}
+		input[type="radio"] {
+			opacity: 0;
+			position: relative;
+		}
 	}
 }
 
@@ -40,21 +50,38 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: left;
-	.input-wrapper {
-		label {
-			margin-bottom: 8px;
-		}
-		
-	}
 }
 
 .form-horizontal {
 	.input-wrapper {
 		margin: 1% 0;
-		label {
-			margin-bottom: 8px;
-		}
 	}	
+}
+
+input[type="radio"]:checked ~ .radio-label .checkmark::after {
+	display: block;
+}
+
+.checkmark {
+	position: absolute;
+	background-color: $primary-color;
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	top: 0;
+	left: 0;
+}
+
+.checkmark::after {
+	content: " ";
+	position: absolute;
+	height: 11px;
+	width: 11px;
+	background-color: #fff;
+	top: 7px;
+	left: 7px;
+	border-radius: 50%;
+	display: none;
 }
 
 .search-form {
@@ -92,11 +119,18 @@
 			&:not(:last-child) {
 				margin-right: 10px;
 			}
-			label {
-				margin-bottom: 8px;
-			}
 		}	
 	}
+	.checkmark {
+		position: absolute;
+		// background-color: red;
+		height: 25px;
+		width: 25px;
+		border-radius: 50%;
+		top: -5px;
+		left: 0;
+	}	
+
 }
 // @media screen and (min-width: 500px) {
 // 	.form-horizontal {

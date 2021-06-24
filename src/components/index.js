@@ -7,6 +7,8 @@ import ContentWrapper from './templates/contentWrapper';
 // form
 import Form from './inputs/form';
 import InputText from './inputs/InputText';
+import InputRadio from './inputs/inputRadio';
+import InputDate from './inputs/inputDate';
 import InputWithButton from './inputs/inputWithButton';
 
 // buttons
@@ -25,10 +27,12 @@ export {
   Navbar,
   Sidebar,
   Paginate,
+  InputDate,
   InputText,
   SubmitBtn,
   ToggleBtn,
   InputAlert,
+  InputRadio,
   BorderLessBtn,
   ContentWrapper,
   InputWithButton,

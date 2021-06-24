@@ -112,7 +112,7 @@ const Guest = () => {
 							</div>
 						</div>
 					</div>
-					<div className="title container mt-20">
+					<div className="title mt-20">
 						History
 						<hr />
 					</div>

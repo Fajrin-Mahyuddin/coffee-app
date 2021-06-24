@@ -81,6 +81,9 @@ hr {
 .mr-5 {
   margin-right: 5px;
 }
+.mr-10 {
+  margin-right: 10px;
+}
 
 .icon-td {
   background-color: #EFEFEF;
@@ -94,15 +97,6 @@ hr {
 }
 .center-text {
   text-align: center;
-}
-.display-column {
-	display: flex;
-	flex-direction: column;
-}
-
-.display-horizontal {
-	display: flex;
-	flex-direction: row;
 }
 
 .progress-bar {

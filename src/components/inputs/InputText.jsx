@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import React, { forwardRef } from 'react';
 
 const InputText = ({
@@ -11,7 +10,7 @@ const InputText = ({
 }, ref) => {
   return (
     <div className={`input-wrapper ${classWrapper}`}>
-      <label htmlFor={id}>
+      <label className="mb-5" htmlFor={id}>
         {label}
       </label>
       {Icon && <Icon className="form-icon" />}
