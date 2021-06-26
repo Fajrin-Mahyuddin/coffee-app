@@ -29,13 +29,13 @@ const MainMenu = () => (
 const StandartMenu = () => (
   <ul>
     <li className="mrl-20">
-      <NavLink to="/dashboard" className="nav-menu-item active">
+      <NavLink exact to="/" className="nav-menu-item">
         <LoginOutlined />
         Login
       </NavLink>
     </li>
     <li className="mrl-20">
-      <NavLink to="/news" className="nav-menu-item">
+      <NavLink exact to="/articles" className="nav-menu-item">
         <ReadOutlined />
         Articles
       </NavLink>

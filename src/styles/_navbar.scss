@@ -34,7 +34,7 @@
 .standart {
   header {
     display: flex;
-    background-color: #fff;
+    background-color: trasparent;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
@@ -246,6 +246,20 @@ nav {
         }
       }
     } 
+    header.bg-scrolled {
+      background-color: $white;
+      transition: .3s;
+      height: 8%;
+      z-index: 4;
+      top: 0;
+      box-shadow: 0px 5px 8px -4px rgba(212, 209, 209, 0.574);
+      .nav-logo {
+        .logo {
+          transition: .3s;
+          width: 40px;
+        }
+      }
+    }
   }
 }
 @media screen and (min-width: 1024px) {
