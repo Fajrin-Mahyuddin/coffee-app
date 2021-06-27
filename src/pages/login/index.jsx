@@ -23,9 +23,9 @@ const LoginPage = () => {
         <div className="content-login">
           <div className="text-wrapper">
             <h2>
-              Laundry App Login
+              Coffee App Login
             </h2>
-            <p>Free pick up and delivery, keep stay at home !</p>
+            <p>Feel bad stay at home ? Don't worry, a cup of coffee can help.</p>
             <Form
               onSubmit={onSubmit}
               className="form-vertical mtb-20"

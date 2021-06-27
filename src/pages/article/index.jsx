@@ -1,32 +1,55 @@
 import React from 'react';
 import { StandartLayout } from 'layout';
+import { ArticleSaly, Cupboard } from 'image'
+import { SubmitBtn } from 'components';
 
 const ArticleList = () => {
 	return (
 		<StandartLayout>
-			<div className="article-container">
+			<div className="container">
 				<div className="article-cover">
 					<div className="article-cover__paragraph">
-						Lorem ipsum dolor sit amet.
+						<h1>Good day starts with <strong> coffee</strong></h1>
+						<p>All about coffee that you should know - <i>coffee lovers</i>.</p>
+						<SubmitBtn label="Read more" className="btn sm-btn primary-btn mr-5" />
+						<SubmitBtn label="Need a cup of coffee ?" className="btn sm-btn default-btn" />
 					</div>
 					<div className="article-cover__img">
-						<img src="# " alt="article-cover__img" />
+						<img className="article-cover__second-img" src={Cupboard} alt="article-cover" />
+						<img className="article-cover__main-img" src={ArticleSaly} alt="article-cover" />
 					</div>
 				</div>
-				<div className="article-item">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eius consequatur saepe ut ab, tenetur non natus odio facilis voluptate, laborum soluta! Quod distinctio, aliquam possimus, laboriosam tempora fuga ad laborum nisi reprehenderit facilis minima eius harum dignissimos! Ex alias, optio recusandae, minima eligendi impedit beatae facere accusantium sit adipisci cumque deleniti architecto quia vitae delectus asperiores. Provident eligendi rerum placeat pariatur cum impedit fugiat consequatur alias architecto! Amet dolore iusto reprehenderit cupiditate reiciendis magni ea earum quaerat facilis neque ducimus repellat corporis, assumenda eligendi in quos eum provident. Aliquid placeat quasi dolorem saepe incidunt explicabo soluta cumque deleniti quas cupiditate, reiciendis facilis, mollitia porro obcaecati hic voluptas repellat ad in. Doloribus commodi dignissimos vel ipsum totam molestiae enim necessitatibus quae sint laborum, placeat aperiam maxime, numquam magnam doloremque voluptates unde nobis sit pariatur, iusto aspernatur quas natus earum. Accusamus tempora rerum, nemo neque non odio! Voluptas eum dolorem et eaque, ex praesentium, dolores voluptate ipsam sunt debitis nulla a nobis libero deserunt nihil commodi sequi? Maiores in, tempora, iure, incidunt sed alias ea harum cupiditate ut architecto aperiam. Quisquam eligendi accusamus ullam temporibus suscipit consectetur repudiandae asperiores aut dolore, doloribus minus aliquam, vel quasi vero rerum beatae ratione cum.
-					<div className="article-img">
-						<img src="# " alt="article-one" />
+				<div className="article-wrapper">
+					<div className="article-item">
+						<div className="article-img">
+							<img src="https://i.picsum.photos/id/0/5616/3744.jpg?hmac=3GAAioiQziMGEtLbfrdbcoenXoWAW-zlyEAMkfEdBzQ" alt="article-one" />
+						</div>
+						<div className="article-content">
+							<div className="article-head">
+								Title
+							</div>
+							<div className="article-body">
+								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis enim asperiores placeat. Lorem ipsum dolor sit amet.
+							</div>
+							<div className="article-footer">
+								<button>Oke</button>
+							</div>
+						</div>
 					</div>
-					<div className="article-content">
-						<div className="article-head">
-							Title
+					<div className="article-item">
+						<div className="article-img">
+							<img src="https://i.picsum.photos/id/0/5616/3744.jpg?hmac=3GAAioiQziMGEtLbfrdbcoenXoWAW-zlyEAMkfEdBzQ" alt="article-one" />
 						</div>
-						<div className="article-body">
-							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis enim asperiores placeat. Lorem ipsum dolor sit amet.
-						</div>
-						<div className="article-footer">
-							<button>Oke</button>
+						<div className="article-content">
+							<div className="article-head">
+								Title
+							</div>
+							<div className="article-body">
+								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis enim asperiores placeat. Lorem ipsum dolor sit amet.
+							</div>
+							<div className="article-footer">
+								<button>Oke</button>
+							</div>
 						</div>
 					</div>
 				</div>

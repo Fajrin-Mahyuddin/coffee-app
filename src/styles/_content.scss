@@ -120,6 +120,11 @@
       margin: 12vh 8% 0;
       display: flex;
       .content-login {
+        .text-wrapper {
+          p {
+            font-size: 14px;
+          }
+        }
         .login-image {
           display: none;
         }
