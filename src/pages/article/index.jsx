@@ -94,6 +94,33 @@ const ArticleList = () => {
 							</div>
 						</div>
 					</div>
+					<div className="article-item">
+						<div className="article-img">
+							<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y29mZmVlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="article-two" />
+						</div>
+						<div className="article-content">
+							<div className="article-category">
+								<span>General</span>
+								<span>3 days ago</span>
+							</div>
+							<div className="article-head">
+								Kopi Memiliki Beragam Rasa
+							</div>
+							<div className="article-body">
+								Well, ‘beragam rasa’ yang dimaksud di sini adalah after taste. After taste adalah flavour atau rasa yang tertinggal di mulut pada saat meneguk kopi. Mungkin kamu belum tahu kalau kopi mampu memberikan aneka after taste pada saat diminum. Tak semua kopi memiliki karakteristik sama terutama saat dinikmati melalui metode manual brewing. Ada kopi yang after taste-nya nutty, cocoa atau justru karamel. Ada juga yang after taste-nya jeruk atau bisa juga stroberi. Kenapa bisa demikian? Itu tergantung kontur tanah dan di mana kopi itu berasal dan di mana kopi itu ditanam. Kopi adalah tanaman unik yang ternyata juga bisa menyerap ‘rasa’ dari tanaman yang ada di dekatnya. Keunikannya ini menjadikan kopi istimewa. Kini banyak para ahli kopi yang mencari kopi-kopi unik di seluruh dunia untuk menemukan after taste-nya.
+							</div>
+							<div className="article-footer">
+								<div className="author">
+									<img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="author" />
+									<span>Fajrin Mahyuddin</span>
+								</div>
+								<a href="# ">Read more</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className="article-more">
+					<button>load more</button>
 				</div>
 			</div>
 		</StandartLayout>
