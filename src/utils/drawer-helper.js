@@ -1,16 +1,16 @@
 const toggleSidebar = (sidebar, content) => {
-  sidebar.current.classList.toggle('open');
-  content.current.classList.toggle('dark');
+  sidebar && sidebar.current.classList.toggle('open');
+  content && content.current.classList.toggle('dark');
 };
 
 const resetToggle = (sidebar, content) => {
-  sidebar.current.classList.remove('open');
-  content.current.classList.remove('dark');
+  sidebar && sidebar.current.classList.remove('open');
+  content && content.current.classList.remove('dark');
 };
 
 const toggleAction = (elementToggle, content) => {
-  elementToggle.current.classList.toggle('open');
-  content.current.classList.toggle('dark');
+  elementToggle && elementToggle.current.classList.toggle('open');
+  content && content.current.classList.toggle('dark');
 };
 
 export { toggleSidebar, resetToggle, toggleAction };

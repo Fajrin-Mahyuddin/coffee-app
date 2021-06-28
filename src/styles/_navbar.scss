@@ -7,7 +7,7 @@
     padding: 5px 20px;
     height: 10%;
     position: fixed;
-    background-color: #fff;
+    background-color: $white;
     width: inherit;
     z-index: 1;
     .nav-btn {
@@ -117,6 +117,20 @@
             }
           }
         }
+      }
+    }
+  }
+  header.bg-scrolled {
+    background-color: $white;
+    transition: .3s;
+    height: 8%;
+    z-index: 4;
+    top: 0;
+    box-shadow: 0px 5px 8px -4px rgba(212, 209, 209, 0.574);
+    .nav-logo {
+      .logo {
+        transition: .3s;
+        width: 40px;
       }
     }
   }
@@ -246,20 +260,6 @@ nav {
         }
       }
     } 
-    header.bg-scrolled {
-      background-color: $white;
-      transition: .3s;
-      height: 8%;
-      z-index: 4;
-      top: 0;
-      box-shadow: 0px 5px 8px -4px rgba(212, 209, 209, 0.574);
-      .nav-logo {
-        .logo {
-          transition: .3s;
-          width: 40px;
-        }
-      }
-    }
   }
 }
 @media screen and (min-width: 1024px) {
