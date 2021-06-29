@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { StandartLayout } from 'layout';
 import { ArticleSaly, Cupboard } from 'image'
 import { SubmitBtn } from 'components';
+import { ClockCircleOutlined, EyeOutlined } from '@ant-design/icons';
 
 const ArticleList = () => {
 	return (
@@ -27,7 +29,7 @@ const ArticleList = () => {
 						<div className="article-content">
 							<div className="article-category">
 								<span>Productivity</span>
-								<span>3 days ago</span>
+								<span> <EyeOutlined /> 220 | <ClockCircleOutlined /> 3 days ago  </span>
 							</div>
 							<div className="article-head">
 								Perjalanan Kopi Sebelum Sampai ke Cangkirmu
@@ -42,7 +44,7 @@ const ArticleList = () => {
 									<img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="author" />
 									<span>Roroa Zoro</span>
 								</div>
-								<a href="# ">Read more</a>
+								<Link to="/articles/detail/123">Read more</Link>
 							</div>
 						</div>
 					</div>
@@ -53,7 +55,7 @@ const ArticleList = () => {
 						<div className="article-content">
 							<div className="article-category">
 								<span>General</span>
-								<span>3 days ago</span>
+								<span> <EyeOutlined /> 220 | <ClockCircleOutlined /> 3 days ago  </span>
 							</div>
 							<div className="article-head">
 								Kopi Memiliki Beragam Rasa
@@ -77,7 +79,7 @@ const ArticleList = () => {
 						<div className="article-content">
 							<div className="article-category">
 								<span>Kopi</span>
-								<span>3 days ago</span>
+								<span> <EyeOutlined /> 220 | <ClockCircleOutlined /> 3 days ago  </span>
 							</div>
 							<div className="article-head">
 								Kopi Tak Melulu Hitam dan Pahit
@@ -101,7 +103,7 @@ const ArticleList = () => {
 						<div className="article-content">
 							<div className="article-category">
 								<span>General</span>
-								<span>3 days ago</span>
+								<span> <EyeOutlined /> 220 | <ClockCircleOutlined /> 3 days ago  </span>
 							</div>
 							<div className="article-head">
 								Kopi Memiliki Beragam Rasa
@@ -120,7 +122,7 @@ const ArticleList = () => {
 					</div>
 				</div>
 				<div className="article-more">
-					<button>load more</button>
+					<a href="# ">Load more</a>
 				</div>
 			</div>
 		</StandartLayout>

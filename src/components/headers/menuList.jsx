@@ -35,7 +35,9 @@ const StandartMenu = () => (
       </NavLink>
     </li>
     <li className="mrl-20">
-      <NavLink exact to="/articles" className="nav-menu-item">
+      <NavLink to="/articles"
+        className="nav-menu-item"
+      >
         <ReadOutlined />
         Articles
       </NavLink>
