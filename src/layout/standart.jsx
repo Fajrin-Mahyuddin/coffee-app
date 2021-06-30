@@ -11,7 +11,7 @@ const Content = ({ className, children, ...props }) => {
   )
 }
 
-const StandartLayout = ({ children }) => {
+const StandartLayout = ({ footer = true, children }) => {
 
   const navRef = createRef();
   const contentRef = useRef();
@@ -21,9 +21,11 @@ const StandartLayout = ({ children }) => {
       <Navbar menu="StandartMenu" ref={navRef} toggleAction={() => toggleAction(navRef, contentRef)} className="container" />
       <ContentWrapper ref={contentRef}>
         {children}
-        <footer className="center-text p-10">
-          &copy; 2021 | Fajrin Mahyuddin
-        </footer>
+        {footer &&
+          <footer className="center-text p-10">
+            &copy; 2021 | Fajrin Mahyuddin
+          </footer>
+        }
       </ContentWrapper>
     </div>
   );

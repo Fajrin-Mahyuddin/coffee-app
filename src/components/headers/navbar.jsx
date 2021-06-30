@@ -11,6 +11,7 @@ const Navbar = ({
   menu,
 }, ref) => {
   useEffect(() => {
+    ifHeaderScrolled(ref)
     window.addEventListener('scroll', () => ifHeaderScrolled(ref));
     return () => window.addEventListener('scroll', () => ifHeaderScrolled(ref));
   }, []);

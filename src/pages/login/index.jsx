@@ -18,7 +18,7 @@ const LoginPage = () => {
   }
 
   return (
-    <StandartLayout>
+    <StandartLayout footer={false}>
       <StandartLayout.Content>
         <div className="content-login">
           <div className="text-wrapper">

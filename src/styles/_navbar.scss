@@ -23,6 +23,7 @@
     nav {
       ul {
         li {
+          margin: 0 5px;
           .nav-menu-item {
             color: $text-color;
           }
@@ -144,7 +145,6 @@ nav {
     align-items: center;
     flex-direction: row;
     li {
-      margin: 0 10px;
       .nav-menu-item {
         font-size: 16px;
         text-transform: capitalize;
@@ -217,7 +217,9 @@ nav {
         transform: translateX(0vh);
         ul {
           li {
-            margin: 0 5px;
+            &:not(:last-child) {
+              margin: 0 5px;
+            }
             .nav-menu-item {
               position: relative;
               display: inline-flex;
@@ -278,7 +280,9 @@ nav {
       nav {
         ul {
           li {
-            margin: 0 10px;
+            &:not(:last-child) {
+              margin: 0 10px;
+            }
             .nav-menu-item {
               position: relative;
               display: inline-flex;
