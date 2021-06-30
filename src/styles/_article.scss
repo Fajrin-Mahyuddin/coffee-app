@@ -456,28 +456,8 @@
 	.article-wrapper {
 		grid-template-columns: repeat(3, 1fr);
 		.article-item:nth-child(5) {
-			grid-column-start: initial; 
-			grid-column-end: initial;
-			.article-img {
-				width: 40%;
-			}
-			.article-content {
-				width: 60%;
-				
-			}
-		}
-		.article-item:nth-child(7) {
-			grid-column-start: 1;
+			grid-column-start: 2; 
 			grid-column-end: 4;
-			.article-img {
-				width: 50%;
-			}
-			.article-content {
-				width: 50%;
-				.article-head {
-					font-size: 1.7rem;
-				}
-			}
-		}	
+		}
 	}	
 }

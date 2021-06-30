@@ -1,6 +1,7 @@
 import React from 'react';
 import { StandartLayout } from 'layout';
 import { useHistory } from 'react-router-dom';
+import { ReadOutlined, RightOutlined } from '@ant-design/icons';
 
 const Guest = () => {
 	const history = useHistory();
@@ -8,6 +9,14 @@ const Guest = () => {
 		<StandartLayout>
 			<StandartLayout.Content>
 				<>
+					<div className="breadcrumbs">
+						<ReadOutlined />
+						<a href="# ">Dashboard</a>
+						<RightOutlined />
+						<a href="# ">Guest</a>
+						<RightOutlined />
+						<a href="# ">Service</a>
+					</div>
 					<div className="service">
 						<div className="service-item">
 							<div className="image-cover">

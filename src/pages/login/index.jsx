@@ -14,7 +14,6 @@ const LoginPage = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    console.log('submt', e);
   }
 
   return (
