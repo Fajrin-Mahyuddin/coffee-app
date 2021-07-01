@@ -1,6 +1,7 @@
 import { DoubleRightOutlined, HeartFilled, RightOutlined, StarFilled } from '@ant-design/icons';
 import { SubmitBtn } from 'components';
-import { Iphone } from 'image';
+import { Iphone2 } from 'image';
+import { CoverSale } from 'image/svg';
 import { StandartLayout } from 'layout';
 import React from 'react';
 
@@ -17,14 +18,36 @@ const SalePage = () => {
 						<RightOutlined />
 						<a href="# ">Sales</a>
 					</div>
-					<div className="sale-cover display-column">
-						<div className="sale-cover__text">
+					<div className="sale-banner display-column">
+						<div className="sale-banner__text">
 							<h3>Welcome to Coffee Shop</h3>
 							<p>Best online shop</p>
-							<button>Get Started</button>
+							<SubmitBtn className="btn md-btn info-btn" label="Get Started" />
 						</div>
-						<div className="sale-cover__img">
-							{/* <img src={Iphone} alt="sale-img" /> */}
+						<div className="sale-banner__img">
+							<img src={Iphone2} alt="sale-img" />
+						</div>
+					</div>
+					<div className="sale-cover">
+						<div className="sale-cover__main">
+							<div className="sale-cover__main-desc">
+								<h2>One Sale Many Things</h2>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dignissimos quas, quis autem tenetur ab.</p>
+								<SubmitBtn className="btn md-btn info-btn" label="Get Started" />
+							</div>
+							<div className="sale-cover__main-img">
+								<img src={CoverSale} alt="cover img" />
+							</div>
+						</div>
+						<div className="sale-cover__main">
+							<div className="sale-cover__main-desc">
+								<h2>One Sale Many Things</h2>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dignissimos quas, quis autem tenetur ab.</p>
+								<SubmitBtn className="btn md-btn info-btn" label="Get Started" />
+							</div>
+							<div className="sale-cover__main-img">
+								<img src={CoverSale} alt="cover img" />
+							</div>
 						</div>
 					</div>
 					<div className="sale-list">
