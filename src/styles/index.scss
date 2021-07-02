@@ -170,6 +170,15 @@ hr {
   background-color: $info-color;
 }
 
+.text-overflow {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
 .w-100 {
   width: 100%;
 }

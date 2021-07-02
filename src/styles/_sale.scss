@@ -112,6 +112,8 @@
 				width: 100%;
 				&-title {
 					font-weight: bold;
+					text-decoration: none;
+					color: inherit;
 				}
 				&-review {
 					display: flex;
@@ -231,6 +233,41 @@
 	.sale-wrapper {
 		.sale-list {
 			grid-template-columns: repeat(5, 1fr);
+		}
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.sale-wrapper {
+		.sale-cover {
+			gap: 20px;
+			margin: 20px 0;
+			&__main {
+				justify-content: space-between;
+				&-desc {
+					width: 40%;
+					padding: 0 0 0 10%;
+					color: $white;
+					h2 {
+						font-size: 3rem;
+					}
+					p {
+						font-size: 1rem;
+					}
+				}
+			}
+			&__second {
+				&-desc {
+					h2 {
+						margin: 20px 0;
+						font-size: 2rem;
+					}
+				}
+			}
+		}
+		.sale-list {
+			gap: 20px;
+			grid-template-columns: repeat(6, 1fr);
 		}
 	}
 }
