@@ -60,8 +60,8 @@ const SalePage = () => {
 								<HeartFilled />
 							</div>
 							<div className="sale-item__body">
-								<Link to={'/sale/detail/123'} className="sale-item__body-title text-overflow">
-									Kris Coffee Maker 1.5 Liter
+								<Link to={'/sale/detail/123'} className="sale-item__body-title text-overflow-2">
+									Moka Pod Coffee
 								</Link>
 								<div className="sale-item__body-review display-horizontal">
 									<div className="start">
@@ -73,7 +73,7 @@ const SalePage = () => {
 									</div>
 									<span className="label label-sm label-primary">Best</span>
 								</div>
-								<div className="sale-item__body-desc">
+								<div className="sale-item__body-desc text-overflow-3">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolor ipsum asperiores.
 								</div>
 								<div className="sale-item__body-footer display-horizontal">
@@ -91,52 +91,21 @@ const SalePage = () => {
 								<HeartFilled />
 							</div>
 							<div className="sale-item__body">
-								<a href="# " className="sale-item__body-title">
+								<Link to={'/sale/detail/123'} className="sale-item__body-title text-overflow-2">
 									Kris Coffee Maker 1.5 Liter
-								</a>
-								<div className="sale-item__body-review display-horizontal">
-									<div className="start">
-										<StarFilled style={{ color: "orange" }} />
-										<StarFilled style={{ color: "orange" }} />
-										<StarFilled style={{ color: "orange" }} />
-										<StarFilled style={{ color: "grey" }} />
-										<StarFilled style={{ color: "grey" }} />
-									</div>
-									<span className="label label-sm label-primary">Best</span>
-								</div>
-								<div className="sale-item__body-desc">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolor ipsum asperiores.
-								</div>
-								<div className="sale-item__body-footer display-horizontal">
-									<div className="content-price">
-										<span className="label label-sm label-warning label-transparent">0%</span>
-										<span>Rp 120.0000</span>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div className="sale-item">
-							<div className="sale-item__img">
-								<img src="https://images.unsplash.com/photo-1565452344518-47faca79dc69?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="img-item" />
-								<HeartFilled style={{ color: 'red' }} />
-							</div>
-							<div className="sale-item__body">
-								<a href="# " className="sale-item__body-title">
-									Kris Coffee Maker 1.5 Liter
-								</a>
+								</Link>
 								<div className="sale-item__body-review display-horizontal">
 									<div className="start">
 										<StarFilled style={{ color: "orange" }} />
 										<StarFilled style={{ color: "orange" }} />
 										<StarFilled style={{ color: "orange" }} />
 										<StarFilled style={{ color: "orange" }} />
-										<StarFilled style={{ color: "orange" }} />
+										<StarFilled style={{ color: "grey" }} />
 									</div>
 									<span className="label label-sm label-primary">Best</span>
 								</div>
-								<div className="sale-item__body-desc">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolor ipsum asperiores.
+								<div className="sale-item__body-desc text-overflow-3">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolor ipsum asperiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem dolor, incidunt exercitationem consequatur odio omnis.
 								</div>
 								<div className="sale-item__body-footer display-horizontal">
 									<div className="content-price">
@@ -153,87 +122,25 @@ const SalePage = () => {
 								<HeartFilled />
 							</div>
 							<div className="sale-item__body">
-								<a href="# " className="sale-item__body-title">
+								<Link to={'/sale/detail/123'} className="sale-item__body-title text-overflow-2">
 									Kris Coffee Maker 1.5 Liter
-								</a>
+								</Link>
 								<div className="sale-item__body-review display-horizontal">
 									<div className="start">
 										<StarFilled style={{ color: "orange" }} />
 										<StarFilled style={{ color: "orange" }} />
 										<StarFilled style={{ color: "orange" }} />
-										<StarFilled style={{ color: "grey" }} />
+										<StarFilled style={{ color: "orange" }} />
 										<StarFilled style={{ color: "grey" }} />
 									</div>
 									<span className="label label-sm label-primary">Best</span>
 								</div>
-								<div className="sale-item__body-desc">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolor ipsum asperiores.
+								<div className="sale-item__body-desc text-overflow-3">
+									Lorem ipsum dolor
 								</div>
 								<div className="sale-item__body-footer display-horizontal">
 									<div className="content-price">
-										<span className="label label-sm label-warning label-transparent">0%</span>
-										<span>Rp 120.0000</span>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div className="sale-item">
-							<div className="sale-item__img">
-								<img src="https://images.unsplash.com/photo-1565452344518-47faca79dc69?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="img-item" />
-								<HeartFilled />
-							</div>
-							<div className="sale-item__body">
-								<a href="# " className="sale-item__body-title">
-									Kris Coffee Maker 1.5 Liter
-								</a>
-								<div className="sale-item__body-review display-horizontal">
-									<div className="start">
-										<StarFilled style={{ color: "orange" }} />
-										<StarFilled style={{ color: "orange" }} />
-										<StarFilled style={{ color: "orange" }} />
-										<StarFilled style={{ color: "grey" }} />
-										<StarFilled style={{ color: "grey" }} />
-									</div>
-									<span className="label label-sm label-primary">Best</span>
-								</div>
-								<div className="sale-item__body-desc">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolor ipsum asperiores.
-								</div>
-								<div className="sale-item__body-footer display-horizontal">
-									<div className="content-price">
-										<span className="label label-sm label-warning label-transparent">0%</span>
-										<span>Rp 120.0000</span>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div className="sale-item">
-							<div className="sale-item__img">
-								<img src="https://images.unsplash.com/photo-1565452344518-47faca79dc69?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="img-item" />
-								<HeartFilled />
-							</div>
-							<div className="sale-item__body">
-								<a href="# " className="sale-item__body-title">
-									Kris Coffee Maker 1.5 Liter
-								</a>
-								<div className="sale-item__body-review display-horizontal">
-									<div className="start">
-										<StarFilled style={{ color: "orange" }} />
-										<StarFilled style={{ color: "orange" }} />
-										<StarFilled style={{ color: "orange" }} />
-										<StarFilled style={{ color: "grey" }} />
-										<StarFilled style={{ color: "grey" }} />
-									</div>
-									<span className="label label-sm label-primary">Best</span>
-								</div>
-								<div className="sale-item__body-desc">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolor ipsum asperiores.
-								</div>
-								<div className="sale-item__body-footer display-horizontal">
-									<div className="content-price">
-										<span className="label label-sm label-warning label-transparent">0%</span>
+										<span className="label label-sm label-warning">0%</span>
 										<span>Rp 120.0000</span>
 									</div>
 								</div>
