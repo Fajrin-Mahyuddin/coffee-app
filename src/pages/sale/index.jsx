@@ -1,7 +1,7 @@
 import { DoubleRightOutlined, HeartFilled, RightOutlined, StarFilled } from '@ant-design/icons';
 import { SubmitBtn } from 'components';
 import { Iphone2 } from 'image';
-import { CoverSale } from 'image/svg';
+import { CoverSale, Saly19 } from 'image/svg';
 import { StandartLayout } from 'layout';
 import React from 'react';
 
@@ -32,21 +32,20 @@ const SalePage = () => {
 						<div className="sale-cover__main">
 							<div className="sale-cover__main-desc">
 								<h2>One Sale Many Things</h2>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dignissimos quas, quis autem tenetur ab.</p>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing .</p>
 								<SubmitBtn className="btn md-btn info-btn" label="Get Started" />
 							</div>
 							<div className="sale-cover__main-img">
 								<img src={CoverSale} alt="cover img" />
 							</div>
 						</div>
-						<div className="sale-cover__main">
-							<div className="sale-cover__main-desc">
-								<h2>One Sale Many Things</h2>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dignissimos quas, quis autem tenetur ab.</p>
+						<div className="sale-cover__second">
+							<div className="sale-cover__second-desc">
+								<h2>Become member</h2>
 								<SubmitBtn className="btn md-btn info-btn" label="Get Started" />
 							</div>
-							<div className="sale-cover__main-img">
-								<img src={CoverSale} alt="cover img" />
+							<div className="sale-cover__second-img">
+								<img src={Saly19} alt="cover img" />
 							</div>
 						</div>
 					</div>
@@ -57,11 +56,11 @@ const SalePage = () => {
 								<img src="https://images.unsplash.com/photo-1565452344518-47faca79dc69?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="img-item" />
 								<HeartFilled />
 							</div>
-							<div className="sale-item__content">
-								<div className="sale-item__content-title">
+							<div className="sale-item__body">
+								<div className="sale-item__body-title">
 									Kris Coffee Maker 1.5 Liter
 								</div>
-								<div className="sale-item__content-review display-horizontal">
+								<div className="sale-item__body-review display-horizontal">
 									<div className="start">
 										<StarFilled style={{ color: "orange" }} />
 										<StarFilled style={{ color: "orange" }} />
@@ -71,16 +70,13 @@ const SalePage = () => {
 									</div>
 									<span className="label label-sm label-primary">Best</span>
 								</div>
-								<div className="sale-item__content-desc">
+								<div className="sale-item__body-desc">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolor ipsum asperiores.
 								</div>
-								<div className="sale-item__content-footer display-horizontal">
+								<div className="sale-item__body-footer display-horizontal">
 									<div className="content-price">
 										<span className="label label-sm label-warning label-transparent">0%</span>
 										<span>Rp 120.0000</span>
-									</div>
-									<div className="content-action">
-										<SubmitBtn label="Order" className="btn sm-btn success-btn" />
 									</div>
 								</div>
 							</div>
@@ -88,37 +84,36 @@ const SalePage = () => {
 
 						<div className="sale-item">
 							<div className="sale-item__img">
-								<img src="https://images.unsplash.com/photo-1616662707703-b4e4ab08e59e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=966&q=80" alt="img-item" />
+								<img src="https://images.unsplash.com/photo-1565452344518-47faca79dc69?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="img-item" />
 								<HeartFilled />
 							</div>
-							<div className="sale-item__content">
-								<div className="sale-item__content-title">
-									Moka Pot Red - Coffee Maker
+							<div className="sale-item__body">
+								<div className="sale-item__body-title">
+									Kris Coffee Maker 1.5 Liter
 								</div>
-								<div className="sale-item__content-review display-horizontal">
+								<div className="sale-item__body-review display-horizontal">
 									<div className="start">
 										<StarFilled style={{ color: "orange" }} />
 										<StarFilled style={{ color: "orange" }} />
 										<StarFilled style={{ color: "orange" }} />
-										<StarFilled style={{ color: "orange" }} />
+										<StarFilled style={{ color: "grey" }} />
 										<StarFilled style={{ color: "grey" }} />
 									</div>
 									<span className="label label-sm label-primary">Best</span>
 								</div>
-								<div className="sale-item__content-desc">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolor ipsum asperiores. Lorem ipsum dolor sit amet consectetur.
+								<div className="sale-item__body-desc">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolor ipsum asperiores.
 								</div>
-								<div className="sale-item__content-footer display-horizontal">
+								<div className="sale-item__body-footer display-horizontal">
 									<div className="content-price">
 										<span className="label label-sm label-warning label-transparent">0%</span>
 										<span>Rp 120.0000</span>
 									</div>
-									<div className="content-action">
-										<SubmitBtn label="Order" className="btn sm-btn success-btn" />
-									</div>
 								</div>
 							</div>
 						</div>
+
+
 
 					</div>
 				</div>

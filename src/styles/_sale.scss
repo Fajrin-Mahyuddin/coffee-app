@@ -15,8 +15,20 @@
 			overflow: hidden;
 			position: relative;
 			width: 100%;
-			text-align: center;
 			min-height: 20vh;
+			&::after {
+				content: " ";
+				width: 40%;
+				bottom: 0;
+				right: 0;
+				opacity: .5;
+				position: absolute;
+				height: 70%;
+				padding: 20px;
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-image: url('../../public/images/iphone.svg');
+			}
 			img {
 				height: 100%;
 				width: 50%;
@@ -37,10 +49,33 @@
 			background: radial-gradient(circle farthest-corner at 50% 5%, #FF6737, #FFAE35 50%);
 			background-repeat: no-repeat;
 			&-img {
-				
 				img {
 					margin: 10px 0;
 					width: 100%;
+				}
+			}
+		}
+		&__second {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background: radial-gradient(circle farthest-corner at 50% 100%, $primary-color, #0338a0 100%);;
+			&-desc {
+				height: 30%;
+				width: 100%;
+				text-align: center;
+				color: $white;
+				h2 {
+					margin: 10px 0;
+				}
+			}
+			&-img {
+				width: 100%;
+				height: 70%;
+				img {
+					width: 100%;
+					height: 100%;
 				}
 			}
 		}
@@ -72,8 +107,32 @@
 					color: $dark-grey;
 				}
 			}
-			&__content {
+			&__body {
 				padding: 10px;
+				width: 100%;
+				&-title {
+					font-weight: bold;
+				}
+				&-review {
+					display: flex;
+					margin: 10px 0;
+					.label {
+						margin-left: auto;
+					}
+				}
+				&-desc {
+					width: 100%;
+					font-size: 13px;
+				}
+				&-footer {
+					margin-top: 10px;
+					.content-price {
+						width: 100%;
+						display: flex;
+						flex-direction: row;
+						justify-content: space-between;
+					}
+				}
 			}
 		}
 	}
@@ -87,6 +146,8 @@
 			&__text {
 				width: 50%;
 				text-align: left;
+				line-height: 5px;
+				padding: 25px 0;
 			}
 			&__img {
 				width: 50%;
@@ -94,19 +155,6 @@
 				position: relative;
 				min-height: 0;
 				z-index: 1;
-				&::after {
-					content: " ";
-					width: 40%;
-					bottom: 0;
-					right: 0;
-					opacity: .5;
-					position: absolute;
-					height: 70%;
-					padding: 20px;
-					background-size: cover;
-					background-repeat: no-repeat;
-					background-image: url('../../public/images/iphone.svg');
-				}
 				img {
 					position: absolute;
 					bottom: 0;
@@ -129,10 +177,15 @@
 			text-align: initial;
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
+			grid-auto-rows: 40vh;
 			gap: 10px;
 			&__main {
 				flex-direction: row;
 				align-items: center;
+				position: relative;
+				padding:0;
+				margin: 0;
+				min-height: 40vh;
 				background: radial-gradient(circle farthest-corner at 100% 50%, #FF6737, #FFAE35 50%);
 				&:first-child {
 					grid-column-start: 1;
@@ -140,12 +193,30 @@
 				}
 				&-desc {
 					width: 40%;
+					padding: 0 0 0 10%;
+					color: $white;
+					h2 {
+						font-size: 2rem;
+					}
+					p {
+						font-size: .9rem;
+					}
 				}
 				&-img {
 					width: 60%;
+					overflow: hidden;
+					height: 100%;
 					text-align: right;
+					position: relative;
 					img {
-						width: 70%;
+						margin: 0;
+						width: 100%;
+						min-height: 100%;
+						bottom: 0;
+						top: -7vh;
+						transform: scale(.9);
+						right: -5vw;
+						position: absolute;
 					}
 				}
 			}
