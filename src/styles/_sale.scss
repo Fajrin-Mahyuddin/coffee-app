@@ -164,23 +164,36 @@
 
 		}
 		&__desc {	
-			padding: 10px;
 			flex: 1;
+			// position: relative;
 			background-color: sandybrown;
+			padding: 10px;
 			&-footer {
-				display: flex;
-				flex-direction: row;
-				align-items: center;
-				position: sticky;
-				bottom: 0;
-				justify-content: space-between;
-				padding: 10px;
+				.footer-child {
+
+					// padding: 10px;
+					display: flex;
+					flex-direction: row;
+					transition: .1s;
+					position: relative;
+					align-items: center;
+					justify-content: space-between;
+					background-color: salmon;
+					&.sticky {
+						padding: 10px 8%;
+						width: 100%;
+						position: fixed;
+						bottom: 0;
+						left: 0;
+						background-color: red;
+					}
+				}
 			}
 		}
 	}
 	.obstacle {
 		background-color: red;
-		height: 100vh;
+		height: 734px;
 	}
 }
 

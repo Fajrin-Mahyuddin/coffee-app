@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import StandartLayout from 'layout/standart';
 import { DoubleRightOutlined, RightOutlined, StarFilled, PlusSquareFilled } from '@ant-design/icons';
 import SubmitBtn from 'components/buttons/submitBtn';
@@ -6,7 +6,12 @@ import { ifFooterPriceScrolled } from 'utils/scrolled';
 
 const SaleDetail = () => {
 	const refFooterPrice = useRef();
-	window.addEventListener('scroll', () => ifFooterPriceScrolled(refFooterPrice))
+	const refFooterChild = useRef();
+	useEffect(() => {
+		ifFooterPriceScrolled(refFooterPrice, refFooterChild);
+		window.addEventListener('scroll', () => ifFooterPriceScrolled(refFooterPrice, refFooterChild), true)
+		return () => window.removeEventListener('scroll', () => ifFooterPriceScrolled(refFooterPrice, refFooterChild), true)
+	}, [])
 	return (
 		<StandartLayout>
 			<StandartLayout.Content>
@@ -54,12 +59,14 @@ const SaleDetail = () => {
 								<span className="label label-sm label-info">Manual</span>
 							</div>
 							<div ref={refFooterPrice} className="sale-item__desc-footer">
-								<div className="sale-item__total-order">
-									<button><PlusSquareFilled /></button>
-									<span>0</span>
-									<button><PlusSquareFilled /></button>
+								<div ref={refFooterChild} className="footer-child">
+									<div className="sale-item__total-order">
+										<button><PlusSquareFilled /></button>
+										<span>0</span>
+										<button><PlusSquareFilled /></button>
+									</div>
+									<SubmitBtn label="Order" className="btn sm-btn success-btn" />
 								</div>
-								<SubmitBtn label="Order" className="btn sm-btn success-btn" />
 							</div>
 						</div>
 					</div>
