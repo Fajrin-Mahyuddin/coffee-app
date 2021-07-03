@@ -6,6 +6,10 @@
     text-transform: capitalize;
     background-color: $light-grey;
   }
+  .label-danger-transparent {
+    color: $white;
+    background-color: $danger-transparent;
+  }
   .label-primary {
     color: $white;
     background-color: $primary-color;

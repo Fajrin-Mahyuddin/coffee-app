@@ -17,9 +17,6 @@ const ifFooterPriceScrolled = (ref, refChild) => {
     return refChild.current?.classList?.add('sticky');
   }
   return refChild.current?.classList?.remove('sticky');
-
-
-
 }
 
 export { ifHeaderScrolled, ifFooterPriceScrolled };
