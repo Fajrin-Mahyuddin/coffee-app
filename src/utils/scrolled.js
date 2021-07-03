@@ -5,4 +5,8 @@ const ifHeaderScrolled = (ref) => {
   return ref.current?.classList?.remove('bg-scrolled');
 };
 
-export { ifHeaderScrolled };
+const ifFooterPriceScrolled = (ref) => {
+  console.log("ifFooterPriceScrolled", ref.current.getBoundingClientRect().bottom);
+}
+
+export { ifHeaderScrolled, ifFooterPriceScrolled };

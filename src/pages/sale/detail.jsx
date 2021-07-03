@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import StandartLayout from 'layout/standart';
 import { DoubleRightOutlined, RightOutlined, StarFilled, PlusSquareFilled } from '@ant-design/icons';
 import SubmitBtn from 'components/buttons/submitBtn';
+import { ifFooterPriceScrolled } from 'utils/scrolled';
 
 const SaleDetail = () => {
+	const refFooterPrice = useRef();
+	window.addEventListener('scroll', () => ifFooterPriceScrolled(refFooterPrice))
 	return (
 		<StandartLayout>
 			<StandartLayout.Content>
@@ -18,10 +21,7 @@ const SaleDetail = () => {
 					</div>
 					<div className="sale-item">
 						<div className="sale-item__img">
-							{/* <div className="sale-item__img-wrapper sticky"> */}
 							<img src="https://images.unsplash.com/photo-1616662707932-350e6e599ea8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=966&q=80" alt="sale-item-img" />
-
-							{/* </div> */}
 						</div>
 						<div className="sale-item__desc">
 							<div className="sale-item__desc-head">
@@ -53,7 +53,7 @@ const SaleDetail = () => {
 								<span className="label label-sm label-primary">Machine</span>
 								<span className="label label-sm label-info">Manual</span>
 							</div>
-							<div className="sale-item__desc-footer">
+							<div ref={refFooterPrice} className="sale-item__desc-footer">
 								<div className="sale-item__total-order">
 									<button><PlusSquareFilled /></button>
 									<span>0</span>
