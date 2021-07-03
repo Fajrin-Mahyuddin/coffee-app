@@ -6,7 +6,15 @@ const ifHeaderScrolled = (ref) => {
 };
 
 const ifFooterPriceScrolled = (ref) => {
-  console.log("ifFooterPriceScrolled", ref.current.getBoundingClientRect().bottom);
+  const heightToTop = ref.current.getBoundingClientRect().bottom;
+  const observer = new IntersectionObserver((e) => {
+    console.log(e[0].intersectionRatio)
+  }, {})
+  observer.observe(ref.current)
+  console.log("getBoundingClientRect", heightToTop);
+  console.log("heigh of window", window.outerHeight);
+
+
 }
 
 export { ifHeaderScrolled, ifFooterPriceScrolled };
